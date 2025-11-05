@@ -1,0 +1,778 @@
+/* style.css */
+/* Reset default browser styles */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+/* Enable smooth scrolling for the entire page */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Set body background and text color */
+body{
+    background: #080808;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+/* Header section styling */
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/background.png);
+    background-size:cover;
+    background-position: center;
+}
+
+/* Container padding for consistent spacing */
+.container{
+    padding: 10px 10%;
+}
+
+/* Desktop Navigation */
+/* Flexbox layout for navigation */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Logo styling */
+.logo{
+    width: 140px;
+}
+
+/* Navigation list styling */
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+/* Navigation list item spacing */
+nav ul li{
+    margin: 10px 20px;
+}
+
+/* Navigation link styling */
+nav ul li a{
+    color: #fff;  
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    transition: color 0.3s;
+}
+
+/* Active navigation link color */
+nav ul li a.active {
+    color: #ff004f;
+}
+
+/* Navigation link underline animation */
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+/* Hover and active state for navigation underline */
+nav ul li a:hover::after,
+nav ul li a.active::after {
+    width: 100%;
+}
+
+/* Header text styling */
+.header-text{
+    margin-top: 70px;
+    font-size: 30px;
+}
+
+/* Main header text styling */
+.header-text h1{
+    font-size: 50px; 
+    margin-top: 20px;
+}
+
+/* Span color in header */
+.header-text h1 span{
+    color: #ff004f;
+}
+
+/*-----------about--------*/
+/* About section padding and text color */
+#about{
+    padding: 80px 0; 
+    color: #ababab;
+}
+
+/* Flexbox layout for rows */
+.row{
+    display: flex; 
+    justify-content: space-between; 
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/* About column 1 styling */
+.about-col-1{
+    flex-basis: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* About image styling */
+.about-col-1 img{
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+/* About column 2 styling */
+.about-col-2{
+    flex-basis: 60%;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Subtitle styling */
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+/* Tab titles flex layout */
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+/* Tab link styling */
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+/* Tab link underline animation */
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+/* Active tab link underline */
+.tab-links.active-link::after{
+    width: 50%;
+}
+
+/* Tab content list item styling */
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+
+/* Tab content span styling */
+.tab-contents ul li span{
+    color: #b54769;
+    font-size: 14px;
+}
+
+/* Hide tab contents by default */
+.tab-contents{
+    display: none;
+}
+
+/* Show active tab content */
+.tab-contents.active-tab{
+    display: block;
+}
+
+/*----------------------services------------*/
+/* Services section padding */
+#services{
+    padding: 30px 0;
+}
+
+/* Grid layout for services list */
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+/* Service item base styling */
+.service-item{
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 350px;
+}
+
+/* Service background colors */
+/* UI/UX Design service gradient background */
+.uiux-bg {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+/* Web Development service gradient background */
+.webdev-bg {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
+
+/* Mobile Services gradient background */
+.mobile-bg {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+}
+
+/* Service icon styling */
+.service-item i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+/* Service title styling */
+.service-item h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+/* Service link styling */
+.service-item a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+/* Service item hover effect */
+.service-item:hover{
+    background-color: #ff004f;
+    transform: translateY(-10px);
+}
+
+/*-------------portfolio------*/
+/* Portfolio section padding */
+#portfolio{
+    padding: 50px 0;
+}
+
+/* Grid layout for work list */
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+/* Work item styling */
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Work image styling */
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s, filter 0.5s;
+}
+
+/* Work overlay layer */
+.layer{
+    width: 100%; 
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.7), #ff004f);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    transition: height 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    opacity: 0;
+}
+
+/* Work image hover effect */
+.work:hover img{
+    transform: scale(1.1);
+    filter: brightness(0.7);
+}
+
+/* Work layer hover effect */
+.work:hover .layer{
+    height: 100%;
+    opacity: 1;
+}
+
+/* Layer title styling */
+.layer h3{
+    font-weight: 600;
+    margin-bottom: 20px;
+    font-size: 24px;
+    transform: translateY(20px);
+    transition: transform 0.5s 0.2s;
+}
+
+/* Layer paragraph styling */
+.layer p{
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    transform: translateY(20px);
+    transition: transform 0.5s 0.3s;
+}
+
+/* Layer link styling */
+.layer a{
+    margin-top: 20px;
+    color: #ff004f;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    transform: translateY(20px);
+    transition: transform 0.5s 0.4s, background 0.3s, color 0.3s;
+}
+
+/* Layer element animation on hover */
+.work:hover .layer h3,
+.work:hover .layer p,
+.work:hover .layer a {
+    transform: translateY(0);
+}
+
+/* Layer link hover effect */
+.layer a:hover{
+    background: #ff004f;
+    color: #fff;
+}
+
+/* Button styling */
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.5s;
+}
+/* Button hover effect */
+.btn:hover{
+    background: #ff004f;
+}
+
+/*-----------------contact---------*/
+/* Contact left column width */
+.contact-left{
+  flex-basis: 35%; 
+}
+/* Contact right column width */
+.contact-right{
+  flex-basis: 60%;
+}
+
+/* Contact paragraph spacing */
+.contact-left p{
+    margin-top: 30px;
+}
+
+/* Contact icon styling */
+.contact-left p i{
+    color: #ff004f;
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+/* Social icons container */
+.social-icons{
+    margin-top: 30px;
+}
+
+/* Social icon link styling */
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+/* Social icon hover effect */
+.social-icons a:hover {
+    color: #ff004f;
+    transform: translateY(-5px);
+}
+
+/* Secondary button styling */
+.btn.btn2{
+    display: inline-block;
+    background: #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.5s;
+}
+
+/* Contact form width */
+.contact-right form{
+    width: 100%;  
+}
+
+/* Form input styling with white text color */
+.form-input {
+    background: #3a3a3a !important; /* Dark background for contrast */
+    color: #ffffff !important; /* White text color for visibility */
+    border: 1px solid #555 !important;
+    padding: 15px !important;
+    margin: 15px 0 !important;
+    font-size: 18px !important;
+    border-radius: 6px !important;
+}
+
+/* Form input placeholder text color */
+.form-input::placeholder {
+    color: #cccccc !important; /* Light gray placeholder text */
+}
+
+/* Form input focus state */
+.form-input:focus {
+    border-color: #ff004f !important;
+    box-shadow: 0 0 0 0.2rem rgba(255, 0, 79, 0.25) !important;
+    background: #3a3a3a !important; /* Maintain background on focus */
+    color: #ffffff !important; /* Maintain white text on focus */
+}
+
+/* Form submit button styling */
+form .btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+    border: none;
+}
+
+/* Copyright section styling */
+.copyright{
+    width: 100%;  
+    text-align: center;
+    padding: 25px 0;
+    font-weight: 300;
+    margin-top: 20px;
+} 
+
+/* Copyright heart icon color */
+.copyright i{
+    color: #ff004f;
+}
+
+/*----------css for mobile menu---*/
+/* Hide menu icons by default */
+.menu-icon, .close-icon{
+    display: none;
+}
+
+/* Side menu transition */
+#sidemenu {
+    transition: right 0.5s ease-in-out;
+}
+
+/* Desktop specific styles for equal spacing */
+@media only screen and (min-width: 769px) {
+    /* Equal spacing between logo and navigation items */
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+    
+    /* Navigation container with equal spacing */
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 600px; /* Adjust this value to control overall width */
+        margin: 0 auto;
+    }
+    
+    /* Equal spacing for navigation items */
+    nav ul li {
+        margin: 0; /* Remove default margins */
+        flex: 1; /* Make all items equal width */
+        text-align: center; /* Center the text within each item */
+    }
+    
+    /* Navigation link styling for equal spacing */
+    nav ul li a {
+        display: block;
+        padding: 10px 5px; /* Add padding for better click area */
+        width: 100%; /* Make links fill the entire list item */
+    }
+    
+    /* Hide mobile menu icons on desktop */
+    .menu-icon, .close-icon {
+        display: none !important;
+    }
+    
+    /* Fixed navigation for desktop */
+    nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background: rgba(8, 8, 8, 0.95);
+        z-index: 999;
+        padding: 15px 10%;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    }
+    
+    /* Adjust header padding for fixed nav on desktop */
+    #header {
+        padding-top: 100px;
+        height: 100vh;
+    }
+    
+    /* Scroll margin for sections with fixed nav */
+    #about, #services {
+        scroll-margin-top: 100px;
+    }
+    
+    /* Equal height for about section on desktop */
+    .about-col-1, .about-col-2 {
+        min-height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    /* About image styling for desktop */
+    .about-col-1 img {
+        height: 400px;
+        object-fit: cover;
+    }
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 768px) {
+    /* Show menu icons on mobile */
+    .menu-icon, .close-icon{
+        display: block;
+    }
+    
+    /* Adjust header text size for mobile */
+    .header-text h1{
+        font-size: 30px;
+    }
+    
+    /* Mobile menu icon styling */
+    .menu-icon{
+        font-size: 25px;
+        cursor: pointer;
+        z-index: 1001;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        background: rgba(0, 0, 0, 0.7);
+        padding: 10px;
+        border-radius: 5px;
+        color: #fff;
+    }
+    
+    /* Close icon styling */
+    .close-icon{
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        font-size: 25px;
+        cursor: pointer;
+        z-index: 1001;
+        color: #fff;
+    }
+    
+    /* Mobile side menu styling */
+    nav ul{
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 1000;
+        flex-direction: column;
+        transition: right 0.5s ease-in-out;
+    }
+    
+    /* Mobile menu list item styling */
+    nav ul li{
+        display: block;
+        margin: 25px;
+        text-align: center;
+    } 
+    
+    /* Adjust subtitle size for mobile */
+    .sub-title{
+        font-size: 40px;
+    }
+    
+    /* Full width for about columns on mobile */
+    .about-col-1, .about-col-2{
+        flex-basis: 100%;
+    }
+    
+    /* About image margin on mobile */
+    .about-col-1{
+        margin-bottom: 30px;
+    }
+    
+    /* Maximize about image on mobile */
+    .about-col-1 img {
+        width: 100%;
+        max-width: 100% !important;
+        height: auto;
+    }
+    
+    /* Adjust about text size for mobile */
+    .about-col-2{
+        font-size: 14px;
+    }
+    
+    /* Adjust tab link size for mobile */
+    .tab-links{
+        font-size: 16px;
+        margin-right: 20px;
+    }
+    
+    /* Full width for contact columns on mobile */
+    .contact-left, .contact-right{
+        flex-basis: 100%;
+    }
+    
+    /* Adjust copyright text size for mobile */
+    .copyright{
+        font-size: 14px;
+    }
+    
+    /* Adjust container padding for mobile */
+    .container{
+        padding: 10px 5%;
+    }
+    
+    /* Fixed navigation for mobile */
+    nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background: rgba(8, 8, 8, 0.95);
+        z-index: 999;
+        padding: 15px 5%;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    }
+    
+    /* Adjust header padding for fixed nav on mobile */
+    #header {
+        padding-top: 80px;
+        height: calc(100vh - 80px);
+    }
+    
+    /* Scroll margin for sections with fixed nav */
+    #about, #services {
+        scroll-margin-top: 80px;
+    }
+    
+    /* Full screen services on mobile */
+    .services-list {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    /* Service item styling for mobile */
+    .service-item {
+        min-height: 80vh;
+        margin: 10px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 40px 20px;
+    }
+    
+    /* Full screen portfolio images on mobile */
+    .work-list {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    /* Work item styling for mobile */
+    .work {
+        min-height: 80vh;
+        margin: 10px 0;
+    }
+    
+    /* Work image styling for mobile */
+    .work img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    /* About page image adjustment for mobile */
+    .about-col-1 img {
+        width: 100%;
+        max-width: 100% !important;
+        height: auto;
+    }
+}
+
+/* Tablet Styles */
+@media only screen
