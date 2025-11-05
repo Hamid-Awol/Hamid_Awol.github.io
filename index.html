@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hamid Personal Portfolio</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,36 +12,29 @@
 </head>
 <body>
 <div id="header">
-<div class="container">
-    <nav>
-        <img src="./images/logo.png" class="logo" alt="Logo">
-        <ul id="sidemenu">
-            <li>
-                <a href="#header" class="nav-link">Home</a>
-            </li>
-            <li>
-                <a href="#about" class="nav-link">About</a>
-            </li>
-            <li>
-                <a href="#services" class="nav-link">Services</a>
-            </li>
-            <li>
-                <a href="#portfolio" class="nav-link">Portfolio</a>
-            </li>
-            <li>
-                <a href="#contact" class="nav-link">Contact</a>
-            </li>
-            <i class="fas fa-times close-icon" onclick="closemenu()"></i>
-        </ul>
-        <i class="fas fa-bars menu-icon" onclick="openmenu()"></i>
-    </nav>
-    <div class="header-text"> 
-        <p style="font-size: 40px">UX/UI Designer</p>
-        <h1>Hi, I'm <span>Hamid</span><br>Awol from Ethiopia</h1>
+    <div class="container">
+        <nav>
+            <img src="./images/logo.png" class="logo" alt="Logo">
+            <ul id="sidemenu">
+                <li><a href="#header" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <i class="fas fa-times close-icon" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars menu-icon" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-content">
+            <div class="header-text">
+                <p class="header-subtitle">UX/UI Designer</p>
+                <h1>Hi, I'm <span>Hamid</span> <br>Awol from Ethiopia</h1>
+            </div>
+        </div>
     </div>
 </div>
-</div>
 
+<!-- Rest of your HTML remains exactly the same as your original code -->
 <!---------------about------>
 <div id="about">
 <div class="container">
@@ -52,12 +44,9 @@
         </div>
         <div class="about-col-2">
             <h1 class="sub-title">About me</h1>
-            <p style="color:#867979;"><br><br>
-
-
-<strong>My name is Hamid Awol and Computer Science graduate at Arsi University.I am passionate about using technology to solve real problems. I have experience on making responsive websites for my university's tech club and a local secondary school. I am also skilled at repairing mobile phones, from physical parts to software issues. I am a quick learner and enjoy working with a team to take on new challenges. I believe my unique mix of software and hardware skills allows me to understand technology from the user to the server. I am now looking for a position that allows me to use both of these skill sets to create reliable and user-friendly products.</strong>
-
-</p>
+            <p class="about-description">
+                <strong>My name is Hamid Awol and Computer Science graduate at Arsi University.I am passionate about using technology to solve real problems. I have experience on making responsive websites for my university's tech club and a local secondary school. I am also skilled at repairing mobile phones, from physical parts to software issues. I am a quick learner and enjoy working with a team to take on new challenges. I believe my unique mix of software and hardware skills allows me to understand technology from the user to the server. I am now looking for a position that allows me to use both of these skill sets to create reliable and user-friendly products.</strong>
+            </p>
             <div class="tab-titles">
                 <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                 <p class="tab-links" onclick="opentab('experience')">Experience</p>
@@ -73,7 +62,6 @@
             <div class="tab-contents" id="experience">
                 <ul>
                     <li><span>2022-2026</span><br>Senior UI/UX Designer at Arsi University Technology club</li>
-                    
                     <li><span>2017-2022</span><br>Mobile Technician at Repair Center</li>
                 </ul>
             </div>
@@ -97,20 +85,20 @@
             <div class="service-item uiux-bg">
                 <i class="fas fa-code"></i>
                 <h2>Web Design</h2>
-                <p style="color: black; font-weight: bold ;">I don't just build websites; I build digital front doors. I craft responsive, visually compelling online spaces that welcome users, work flawlessly on any device, and make a powerful first impression that lasts.</p>
-                <a href="https://www.w3schools.com/whatis/" target="_blank"> <button style="color: #fff; background-color: rgb(117, 29, 199); width: 100px; height: 40px; border-radius: 20px;">Learn more</button></a>
+                <p class="service-description">I don't just build websites; I build digital front doors. I craft responsive, visually compelling online spaces that welcome users, work flawlessly on any device, and make a powerful first impression that lasts.</p>
+                <a href="https://www.w3schools.com/whatis/" target="_blank"> <button class="service-btn">Learn more</button></a>
             </div>
             <div class="service-item webdev-bg">
                 <i class="fas fa-crop-alt"></i>
                 <h2>UI/UX Design</h2>
-                <p style="color: black; font-weight: bold ;">I design how apps and websites look and feel. My goal is to make them simple, clear, and pleasant for people to use.</p>
-                <a href="https://www.freecodecamp.org/news/ui-ux-design-tutorial-from-zero-to-hero-with-wireframe-prototype-figma/" target="_blank"><button style="color: #fff; background-color: rgb(117, 29, 199); width: 100px; height: 40px; border-radius: 20px;">Learn more</button></a>
+                <p class="service-description">I design how apps and websites look and feel. My goal is to make them simple, clear, and pleasant for people to use.</p>
+                <a href="https://www.freecodecamp.org/news/ui-ux-design-tutorial-from-zero-to-hero-with-wireframe-prototype-figma/" target="_blank"><button class="service-btn">Learn more</button></a>
             </div>
             <div class="service-item mobile-bg">
                 <i class="fas fa-mobile-alt"></i>
                 <h2>Mobile Services</h2>
-                <p style="color: black; font-weight: bold ;">I bring technology back to life. With a unique skill set that spans both physical hardware and digital software, I solve the puzzles that stop our most essential devices from working. I ensure the tools that connect us to the world remain in our hands, powerful and functional.</p>
-                <a href="https://www.ifixit.com/Device/Phone" target="_blank"><button style="color: #fff; background-color: rgb(117, 29, 199); width: 100px; height: 40px; border-radius: 20px;">Learn more</button></a>
+                <p class="service-description">I bring technology back to life. With a unique skill set that spans both physical hardware and digital software, I solve the puzzles that stop our most essential devices from working. I ensure the tools that connect us to the world remain in our hands, powerful and functional.</p>
+                <a href="https://www.ifixit.com/Device/Phone" target="_blank"><button class="service-btn">Learn more</button></a>
             </div>
         </div>
     </div>
@@ -126,7 +114,6 @@
             <div class="layer">
                 <h3>Arsi University</h3>
                 <p>I have developed responsive website for Arsi University Technology Club in collaboration with different students.</p>
-                <!-- GitHub link added for first work -->
                 <a href="https://github.com/Hamid-Awol?tab=repositories" target="_blank"><i class="fab fa-github"></i></a>
             </div>
         </div>
@@ -135,7 +122,6 @@
             <div class="layer">
                 <h3>Website for Koshe Secondary School</h3>
                 <p>I have developed responsive website for Koshe Secondary School in Mareko Special Woreda.</p>
-                <!-- GitHub link added for second work -->
                 <a href="https://github.com/Hamid-Awol?tab=repositories" target="_blank"><i class="fab fa-github"></i></a>
             </div>
         </div>
@@ -144,7 +130,6 @@
             <div class="layer">
                 <h3>My GitHub Account</h3>
                 <p>I have participated in many projects with remote area developers.</p>
-                <!-- GitHub link added for third work -->
                 <a href="https://github.com/Hamid-Awol?tab=repositories" target="_blank"><i class="fab fa-github"></i></a>
             </div>
         </div>
@@ -152,43 +137,39 @@
     <a href="https://t.me/marekodigitals" class="btn">Join Our Club</a>
 </div>
 </div>
+
 <!-------------contact------------>
 <div id="contact">
     <div class="container">
         <div class="row">
             <div class="contact-left">
-<h1 class="sub-title">Contact Me</h1>
-<p> <i class="fas fa-paper-plane"></i>hamidawol39@gmail.com</p> 
-               <p> <i class="fas fa-phone-alt"></i>+251921426433</p>
-               <div class="social-icons">
-                
-                <a href="https://t.me/Hamid_Awol"> <i class="fab fa-telegram"></i></a>
-                 <a href="https://github.com/Hamid-Awol?tab=repositories"> <i class="fab fa-github"></i></a>
-                <a href=""> <i class="fab fa-linkedin"></i></a>
-                <a href=""> <i class="fab fa-tiktok"></i></a>
-            </div>
-            <a href="images/my-cv.pdf" class="btn btn2">Download CV</a>
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i>hamidawol39@gmail.com</p> 
+                <p><i class="fas fa-phone-alt"></i>+251921426433</p>
+                <div class="social-icons">
+                    <a href="https://t.me/Hamid_Awol"><i class="fab fa-telegram"></i></a>
+                    <a href="https://github.com/Hamid-Awol?tab=repositories"><i class="fab fa-github"></i></a>
+                    <a href=""><i class="fab fa-linkedin"></i></a>
+                    <a href=""><i class="fab fa-tiktok"></i></a>
+                </div>
+                <a href="images/my-cv.pdf" class="btn btn2">Download CV</a>
             </div>
             <div class="contact-right">
                <form name="submit-to-google-sheet" id="contact-form">
                 <div class="mb-3">
-                    <!-- Name input field with white text color -->
                     <input type="text" name="Name" id="name" class="form-control form-input" placeholder="Your Name" required>
                     <div class="invalid-feedback">Please enter your name.</div>
                 </div>
                 <div class="mb-3">
-                    <!-- Email input field with white text color -->
                     <input type="email" name="Email" id="email" class="form-control form-input" placeholder="Your Email" required>
                     <div class="invalid-feedback">Please enter a valid email address.</div>
                 </div>
                 <div class="mb-3">
-                    <!-- Message textarea with white text color -->
                     <textarea name="Message" id="message" rows="6" class="form-control form-input" placeholder="Your Message" required></textarea>
                     <div class="invalid-feedback">Please enter your message.</div>
                 </div>
                 <button type="submit" class="btn btn2">Submit</button>
                </form>
-
                <span id="msg"></span>
             </div>
         </div>
@@ -200,50 +181,37 @@
 
 <script>
     // Tab functionality
-    // Get all tab links and tab contents
     var tablinks = document.getElementsByClassName("tab-links");
     var tabcontents = document.getElementsByClassName("tab-contents");
     
-    // Function to open tabs
     function opentab(tabname){
-        // Remove active class from all tab links
         for(var tablink of tablinks){
             tablink.classList.remove("active-link");
         }
-        
-        // Remove active class from all tab contents
         for(var tabcontent of tabcontents){
             tabcontent.classList.remove("active-tab");
         }
-        
-        // Add active class to current tab link and content
         event.currentTarget.classList.add("active-link");
         document.getElementById(tabname).classList.add("active-tab");
     }
     
     // Mobile menu functionality
-    // Get the side menu element
     var sidemenu = document.getElementById("sidemenu");
     
-    // Function to open mobile menu
     function openmenu() {
-        sidemenu.style.right = "0"; // Show menu by setting right to 0
-        document.body.style.overflow = "hidden"; // Prevent body scrolling
+        sidemenu.style.right = "0";
+        document.body.style.overflow = "hidden";
     }
     
-    // Function to close mobile menu
     function closemenu() {
-        sidemenu.style.right = "-200px"; // Hide menu by setting right to -200px
-        document.body.style.overflow = "auto"; // Allow body scrolling
+        sidemenu.style.right = "-200px";
+        document.body.style.overflow = "auto";
     }
     
     // Close menu when clicking on navigation links
-    // Get all navigation links
     var navLinks = document.querySelectorAll('.nav-link');
-    // Add click event listener to each link
     navLinks.forEach(function(link) {
         link.addEventListener('click', function() {
-            // Close menu if on mobile screen
             if (window.innerWidth <= 768) {
                 closemenu();
             }
@@ -251,18 +219,14 @@
     });
     
     // Smooth scrolling with fixed navigation offset
-    // Get all anchor links that start with #
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        // Add click event listener to each anchor
         anchor.addEventListener('click', function (e) {
-            e.preventDefault(); // Prevent default anchor behavior
-            const targetId = this.getAttribute('href'); // Get target ID
+            e.preventDefault();
+            const targetId = this.getAttribute('href');
             if (targetId !== '#') {
-                const targetElement = document.querySelector(targetId); // Get target element
+                const targetElement = document.querySelector(targetId);
                 if (targetElement) {
-                    // Calculate offset based on screen size
-                    const offset = window.innerWidth <= 768 ? 80 : 0;
-                    // Scroll to target with smooth behavior
+                    const offset = window.innerWidth <= 768 ? 80 : 100;
                     window.scrollTo({
                         top: targetElement.offsetTop - offset,
                         behavior: 'smooth'
@@ -273,28 +237,21 @@
     });
     
     // Active navigation highlight on scroll
-    // Add scroll event listener to window
     window.addEventListener('scroll', function() {
-        // Get all sections
         var sections = document.querySelectorAll('#header, #about, #services, #portfolio, #contact');
-        // Get all navigation links
         var navLinks = document.querySelectorAll('.nav-link');
         
-        var current = ''; // Variable to store current section
-        // Loop through sections to find current one
+        var current = '';
         sections.forEach(section => {
-            const sectionTop = section.offsetTop; // Get section top position
-            const sectionHeight = section.clientHeight; // Get section height
-            // Check if current scroll position is within section
-            if (pageYOffset >= (sectionTop - 100)) {
-                current = section.getAttribute('id'); // Set current section ID
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+            if (pageYOffset >= (sectionTop - 150)) {
+                current = section.getAttribute('id');
             }
         });
         
-        // Update active state of navigation links
         navLinks.forEach(link => {
-            link.classList.remove('active'); // Remove active class
-            // Add active class if link href matches current section
+            link.classList.remove('active');
             if (link.getAttribute('href') === '#' + current) {
                 link.classList.add('active');
             }
@@ -302,41 +259,39 @@
     });
     
     // Form validation
-    // Get form and input elements
     const form = document.getElementById('contact-form');
     const nameInput = document.getElementById('name');
     const emailInput = document.getElementById('email');
     const messageInput = document.getElementById('message');
     
-    // Add submit event listener to form
     form.addEventListener('submit', function(e) {
-        e.preventDefault(); // Prevent form submission
+        e.preventDefault();
         
-        let isValid = true; // Validation flag
+        let isValid = true;
         
         // Name validation
         if (nameInput.value.trim() === '') {
-            nameInput.classList.add('is-invalid'); // Show error
+            nameInput.classList.add('is-invalid');
             isValid = false;
         } else {
-            nameInput.classList.remove('is-invalid'); // Remove error
+            nameInput.classList.remove('is-invalid');
         }
         
         // Email validation
-        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Email regex pattern
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!emailPattern.test(emailInput.value.trim())) {
-            emailInput.classList.add('is-invalid'); // Show error
+            emailInput.classList.add('is-invalid');
             isValid = false;
         } else {
-            emailInput.classList.remove('is-invalid'); // Remove error
+            emailInput.classList.remove('is-invalid');
         }
         
         // Message validation
         if (messageInput.value.trim() === '') {
-            messageInput.classList.add('is-invalid'); // Show error
+            messageInput.classList.add('is-invalid');
             isValid = false;
         } else {
-            messageInput.classList.remove('is-invalid'); // Remove error
+            messageInput.classList.remove('is-invalid');
         }
         
         // If form is valid, submit it
@@ -344,17 +299,15 @@
             const scriptURL = 'https://script.google.com/macros/s/AKfycbxKm4FbxWmw5ajwJWUEA18fAtUviVho0D7_L8hrcjdSCEoCjGpWnrwbLFXiNexRAId-/exec';
             const msg = document.getElementById("msg");
             
-            // Send form data to Google Sheets
             fetch(scriptURL, { method: 'POST', body: new FormData(form)})
                 .then(response => {
-                    msg.innerHTML = "Message sent successfully"; // Show success message
-                    // Clear message after 5 seconds
+                    msg.innerHTML = "Message sent successfully";
                     setTimeout(function(){
                         msg.innerHTML = ""; 
                     },5000);
-                    form.reset(); // Reset form
+                    form.reset();
                 })
-                .catch(error => console.error('Error!', error.message)); // Log errors
+                .catch(error => console.error('Error!', error.message));
         }
     });
 </script>

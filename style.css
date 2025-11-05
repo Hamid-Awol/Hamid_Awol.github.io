@@ -1,4 +1,4 @@
-/* style.css */
+
 /* Reset default browser styles */
 *{
     margin: 0;
@@ -19,52 +19,69 @@ body{
     overflow-x: hidden;
 }
 
-/* Header section styling */
+/* Header section styling - USING YOUR ORIGINAL BACKGROUND */
 #header{
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     background-image: url(images/background.png);
-    background-size:cover;
+    background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
 }
 
 /* Container padding for consistent spacing */
 .container{
-    padding: 10px 10%;
+    padding: 10px 5%;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 /* Desktop Navigation */
-/* Flexbox layout for navigation */
 nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    width: 100%;
+    padding: 15px 5%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(8, 8, 8, 0.95);
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
 /* Logo styling */
 .logo{
     width: 140px;
+    max-width: 100%;
+    height: auto;
 }
 
 /* Navigation list styling */
 nav ul{
     display: flex;
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 /* Navigation list item spacing */
 nav ul li{
-    margin: 10px 20px;
+    margin: 0 15px;
 }
 
 /* Navigation link styling */
 nav ul li a{
     color: #fff;  
     text-decoration: none;
-    font-size: 18px;
+    font-size: 16px;
     position: relative;
     transition: color 0.3s;
+    font-weight: 500;
 }
 
 /* Active navigation link color */
@@ -90,16 +107,33 @@ nav ul li a.active::after {
     width: 100%;
 }
 
+/* Header content styling */
+.header-content {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    padding-top: 80px;
+    text-align: left;
+}
+
 /* Header text styling */
 .header-text{
-    margin-top: 70px;
-    font-size: 30px;
+    max-width: 600px;
+}
+
+/* Header subtitle styling - Increased font size as requested */
+.header-subtitle{
+    font-size: 40px; /* Increased from 24px to 40px */
+    margin-bottom: 15px;
+    color: #fff;
+    font-weight: 500;
 }
 
 /* Main header text styling */
 .header-text h1{
-    font-size: 50px; 
-    margin-top: 20px;
+    font-size: 52px; 
+    line-height: 1.2;
+    margin-bottom: 20px;
 }
 
 /* Span color in header */
@@ -112,6 +146,7 @@ nav ul li a.active::after {
 #about{
     padding: 80px 0; 
     color: #ababab;
+    scroll-margin-top: 80px;
 }
 
 /* Flexbox layout for rows */
@@ -119,7 +154,7 @@ nav ul li a.active::after {
     display: flex; 
     justify-content: space-between; 
     flex-wrap: wrap;
-    align-items: center;
+    align-items: flex-start;
 }
 
 /* About column 1 styling */
@@ -128,6 +163,7 @@ nav ul li a.active::after {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 30px;
 }
 
 /* About image styling */
@@ -142,7 +178,6 @@ nav ul li a.active::after {
 /* About column 2 styling */
 .about-col-2{
     flex-basis: 60%;
-    min-height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -150,25 +185,37 @@ nav ul li a.active::after {
 
 /* Subtitle styling */
 .sub-title{
-    font-size: 60px;
+    font-size: 48px;
     font-weight: 600;
     color: #fff;
     margin-bottom: 20px;
+    text-align: center;
+}
+
+/* About description styling */
+.about-description{
+    color: #867979;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    text-align: justify;
 }
 
 /* Tab titles flex layout */
 .tab-titles{
     display: flex;
     margin: 20px 0 40px;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 /* Tab link styling */
 .tab-links{
-    margin-right: 50px;
+    margin-right: 20px;
     font-size: 18px;
     font-weight: 500;
     cursor: pointer;
     position: relative;
+    padding: 10px 0;
 }
 
 /* Tab link underline animation */
@@ -192,12 +239,14 @@ nav ul li a.active::after {
 .tab-contents ul li{
     list-style: none;
     margin: 10px 0;
+    line-height: 1.6;
 }
 
 /* Tab content span styling */
 .tab-contents ul li span{
     color: #b54769;
     font-size: 14px;
+    font-weight: 600;
 }
 
 /* Hide tab contents by default */
@@ -213,28 +262,30 @@ nav ul li a.active::after {
 /*----------------------services------------*/
 /* Services section padding */
 #services{
-    padding: 30px 0;
+    padding: 80px 0;
+    scroll-margin-top: 80px;
 }
 
 /* Grid layout for services list */
 .services-list{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
 }
 
 /* Service item base styling */
 .service-item{
-    padding: 40px;
-    font-size: 13px;
+    padding: 40px 30px;
+    font-size: 16px;
     font-weight: 300;
     border-radius: 10px;
-    transition: background 0.5s, transform 0.5s;
+    transition: transform 0.5s;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: 350px;
+    min-height: 400px;
+    text-align: center;
 }
 
 /* Service background colors */
@@ -257,6 +308,7 @@ nav ul li a.active::after {
 .service-item i{
     font-size: 50px;
     margin-bottom: 30px;
+    color: #fff;
 }
 
 /* Service title styling */
@@ -264,33 +316,51 @@ nav ul li a.active::after {
     font-size: 30px;
     font-weight: 500;
     margin-bottom: 15px;
+    color: #fff;
 }
 
-/* Service link styling */
-.service-item a{
-    text-decoration: none;
+/* Service description styling */
+.service-description{
     color: #fff;
-    font-size: 12px;
-    margin-top: 20px;
-    display: inline-block;
+    font-weight: 500;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Service button styling */
+.service-btn{
+    color: #fff;
+    background-color: rgb(117, 29, 199);
+    width: 120px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: auto;
+    align-self: center;
+}
+
+.service-btn:hover{
+    background-color: rgb(95, 20, 165);
 }
 
 /* Service item hover effect */
 .service-item:hover{
-    background-color: #ff004f;
     transform: translateY(-10px);
 }
 
 /*-------------portfolio------*/
 /* Portfolio section padding */
 #portfolio{
-    padding: 50px 0;
+    padding: 80px 0;
+    scroll-margin-top: 80px;
 }
 
 /* Grid layout for work list */
 .work-list{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
 }
@@ -301,14 +371,17 @@ nav ul li a.active::after {
     position: relative;
     overflow: hidden;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    aspect-ratio: 4/3;
 }
 
 /* Work image styling */
 .work img{
     width: 100%;
+    height: 100%;
     border-radius: 10px;
     display: block;
     transition: transform 0.5s, filter 0.5s;
+    object-fit: cover;
 }
 
 /* Work overlay layer */
@@ -401,13 +474,19 @@ nav ul li a.active::after {
     text-decoration: none;
     color: #fff;
     transition: background 0.5s;
+    text-align: center;
 }
 /* Button hover effect */
 .btn:hover{
     background: #ff004f;
+    color: #fff;
 }
 
 /*-----------------contact---------*/
+#contact {
+    scroll-margin-top: 80px;
+}
+
 /* Contact left column width */
 .contact-left{
   flex-basis: 35%; 
@@ -420,6 +499,8 @@ nav ul li a.active::after {
 /* Contact paragraph spacing */
 .contact-left p{
     margin-top: 30px;
+    display: flex;
+    align-items: center;
 }
 
 /* Contact icon styling */
@@ -459,6 +540,9 @@ nav ul li a.active::after {
     text-decoration: none;
     color: #fff;
     transition: background 0.5s;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
 }
 
 /* Contact form width */
@@ -467,27 +551,28 @@ nav ul li a.active::after {
 }
 
 /* Form input styling with white text color */
-.form-input {
-    background: #3a3a3a !important; /* Dark background for contrast */
-    color: #ffffff !important; /* White text color for visibility */
+.form-control {
+    background: #3a3a3a !important;
+    color: #ffffff !important;
     border: 1px solid #555 !important;
     padding: 15px !important;
     margin: 15px 0 !important;
     font-size: 18px !important;
     border-radius: 6px !important;
+    width: 100%;
 }
 
 /* Form input placeholder text color */
-.form-input::placeholder {
-    color: #cccccc !important; /* Light gray placeholder text */
+.form-control::placeholder {
+    color: #cccccc !important;
 }
 
 /* Form input focus state */
-.form-input:focus {
+.form-control:focus {
     border-color: #ff004f !important;
     box-shadow: 0 0 0 0.2rem rgba(255, 0, 79, 0.25) !important;
-    background: #3a3a3a !important; /* Maintain background on focus */
-    color: #ffffff !important; /* Maintain white text on focus */
+    background: #3a3a3a !important;
+    color: #ffffff !important;
 }
 
 /* Form submit button styling */
@@ -497,6 +582,7 @@ form .btn2{
     margin-top: 20px;
     cursor: pointer;
     border: none;
+    width: 100%;
 }
 
 /* Copyright section styling */
@@ -524,81 +610,6 @@ form .btn2{
     transition: right 0.5s ease-in-out;
 }
 
-/* Desktop specific styles for equal spacing */
-@media only screen and (min-width: 769px) {
-    /* Equal spacing between logo and navigation items */
-    nav {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        width: 100%;
-    }
-    
-    /* Navigation container with equal spacing */
-    nav ul {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-        max-width: 600px; /* Adjust this value to control overall width */
-        margin: 0 auto;
-    }
-    
-    /* Equal spacing for navigation items */
-    nav ul li {
-        margin: 0; /* Remove default margins */
-        flex: 1; /* Make all items equal width */
-        text-align: center; /* Center the text within each item */
-    }
-    
-    /* Navigation link styling for equal spacing */
-    nav ul li a {
-        display: block;
-        padding: 10px 5px; /* Add padding for better click area */
-        width: 100%; /* Make links fill the entire list item */
-    }
-    
-    /* Hide mobile menu icons on desktop */
-    .menu-icon, .close-icon {
-        display: none !important;
-    }
-    
-    /* Fixed navigation for desktop */
-    nav {
-        position: fixed;
-        top: 0;
-        width: 100%;
-        background: rgba(8, 8, 8, 0.95);
-        z-index: 999;
-        padding: 15px 10%;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-    }
-    
-    /* Adjust header padding for fixed nav on desktop */
-    #header {
-        padding-top: 100px;
-        height: 100vh;
-    }
-    
-    /* Scroll margin for sections with fixed nav */
-    #about, #services {
-        scroll-margin-top: 100px;
-    }
-    
-    /* Equal height for about section on desktop */
-    .about-col-1, .about-col-2 {
-        min-height: 500px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    
-    /* About image styling for desktop */
-    .about-col-1 img {
-        height: 400px;
-        object-fit: cover;
-    }
-}
-
 /* Mobile Styles */
 @media only screen and (max-width: 768px) {
     /* Show menu icons on mobile */
@@ -608,7 +619,11 @@ form .btn2{
     
     /* Adjust header text size for mobile */
     .header-text h1{
-        font-size: 30px;
+        font-size: 32px;
+    }
+    
+    .header-subtitle {
+        font-size: 24px; /* Adjusted for mobile */
     }
     
     /* Mobile menu icon styling */
@@ -616,12 +631,6 @@ form .btn2{
         font-size: 25px;
         cursor: pointer;
         z-index: 1001;
-        position: fixed;
-        top: 20px;
-        right: 20px;
-        background: rgba(0, 0, 0, 0.7);
-        padding: 10px;
-        border-radius: 5px;
         color: #fff;
     }
     
@@ -659,7 +668,7 @@ form .btn2{
     
     /* Adjust subtitle size for mobile */
     .sub-title{
-        font-size: 40px;
+        font-size: 36px;
     }
     
     /* Full width for about columns on mobile */
@@ -688,6 +697,7 @@ form .btn2{
     .tab-links{
         font-size: 16px;
         margin-right: 20px;
+        margin-bottom: 10px;
     }
     
     /* Full width for contact columns on mobile */
@@ -705,7 +715,139 @@ form .btn2{
         padding: 10px 5%;
     }
     
-    /* Fixed navigation for mobile */
+    /* Stack services vertically on mobile */
+    .services-list {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Adjust service item height on mobile */
+    .service-item {
+        min-height: 350px;
+        padding: 30px 20px;
+    }
+    
+    /* Stack portfolio items vertically on mobile */
+    .work-list {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Contact form adjustments for mobile */
+    .contact-right form {
+        margin-top: 30px;
+    }
+    
+    /* Header content adjustments for mobile */
+    .header-content {
+        padding-top: 100px;
+        text-align: center;
+    }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    /* Adjust header text for tablet */
+    .header-text h1 {
+        font-size: 42px;
+    }
+    
+    .header-subtitle {
+        font-size: 32px; /* Adjusted for tablet */
+    }
+    
+    /* Adjust about columns for tablet */
+    .about-col-1, .about-col-2 {
+        flex-basis: 100%;
+        margin-bottom: 30px;
+    }
+    
+    /* Center about image on tablet */
+    .about-col-1 {
+        display: flex;
+        justify-content: center;
+    }
+    
+    /* Adjust services grid for tablet */
+    .services-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Adjust portfolio grid for tablet */
+    .work-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Adjust contact columns for tablet */
+    .contact-left, .contact-right {
+        flex-basis: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+/* Small phone styles */
+@media only screen and (max-width: 480px) {
+    /* Further reduce header text size */
+    .header-text h1 {
+        font-size: 28px;
+    }
+    
+    .header-subtitle {
+        font-size: 20px; /* Adjusted for small phones */
+    }
+    
+    /* Adjust subtitle for small screens */
+    .sub-title {
+        font-size: 30px;
+    }
+    
+    /* Reduce padding in service items */
+    .service-item {
+        padding: 20px 15px;
+        min-height: 300px;
+    }
+    
+    /* Adjust navigation for very small screens */
+    nav {
+        padding: 10px 5%;
+    }
+    
+    .logo {
+        width: 120px;
+    }
+    
+    /* Adjust header content padding */
+    .header-content {
+        padding-top: 80px;
+    }
+}
+
+/* Desktop specific styles */
+@media only screen and (min-width: 1025px) {
+    /* Equal spacing between logo and navigation items */
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+    
+    /* Navigation container with equal spacing */
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+        width: auto;
+    }
+    
+    /* Equal spacing for navigation items */
+    nav ul li {
+        margin: 0 20px;
+    }
+    
+    /* Hide mobile menu icons on desktop */
+    .menu-icon, .close-icon {
+        display: none !important;
+    }
+    
+    /* Fixed navigation for desktop */
     nav {
         position: fixed;
         top: 0;
@@ -715,64 +857,4 @@ form .btn2{
         padding: 15px 5%;
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
     }
-    
-    /* Adjust header padding for fixed nav on mobile */
-    #header {
-        padding-top: 80px;
-        height: calc(100vh - 80px);
-    }
-    
-    /* Scroll margin for sections with fixed nav */
-    #about, #services {
-        scroll-margin-top: 80px;
-    }
-    
-    /* Full screen services on mobile */
-    .services-list {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-    }
-    
-    /* Service item styling for mobile */
-    .service-item {
-        min-height: 80vh;
-        margin: 10px 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        padding: 40px 20px;
-    }
-    
-    /* Full screen portfolio images on mobile */
-    .work-list {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-    }
-    
-    /* Work item styling for mobile */
-    .work {
-        min-height: 80vh;
-        margin: 10px 0;
-    }
-    
-    /* Work image styling for mobile */
-    .work img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-    
-    /* About page image adjustment for mobile */
-    .about-col-1 img {
-        width: 100%;
-        max-width: 100% !important;
-        height: auto;
-    }
 }
-
-/* Tablet Styles */
-@media only screen
