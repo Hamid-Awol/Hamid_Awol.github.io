@@ -631,11 +631,11 @@ form .btn2{
         color: #fff;
     }
     
-    /* Close icon styling */
+    /* Close icon styling - MOVED TO LEFT CORNER */
     .close-icon{
         position: absolute;
         top: 25px;
-        right: 25px;
+        left: 25px; /* Changed from right to left */
         font-size: 25px;
         cursor: pointer;
         z-index: 1001;
@@ -740,10 +740,21 @@ form .btn2{
         text-align: center;
     }
     
-    /* Ensure background spans full width on mobile */
+    /* MOBILE-SPECIFIC BACKGROUND FOR HOME SECTION - FULL BRIGHTNESS */
     #header {
+        background-image: url(images/phone.png);
         background-size: cover;
         background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+    
+    /* REMOVED DARK OVERLAY FOR FULL BRIGHTNESS */
+    
+    /* Ensure header content appears above overlay */
+    .header-content {
+        position: relative;
+        z-index: 2;
     }
 }
 
@@ -835,10 +846,20 @@ form .btn2{
         padding-top: 80px;
     }
     
-    /* Ensure background spans full width on small phones */
+    /* MOBILE BACKGROUND FOR SMALL PHONES - FULL BRIGHTNESS */
     #header {
+        background-image: url(images/phone.png);
         background-size: cover;
         background-position: center;
+        position: relative;
+    }
+    
+    /* REMOVED DARK OVERLAY FOR FULL BRIGHTNESS */
+    
+    /* Ensure header content appears above overlay */
+    .header-content {
+        position: relative;
+        z-index: 2;
     }
 }
 
