@@ -1,660 +1,609 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Hamid Awol - FullStack Developer</title>
-  <meta name="description" content="FullStack Developer specializing in modern web technologies and scalable applications">
-  <meta name="keywords" content="FullStack Developer, JavaScript, React, Node.js, Python, Web Development">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamid's Portfolio</title>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-20QJ56G8M3"></script>
+    <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-20QJ56G8M3');
+    </script>
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-
-  <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
+<body>
+<!-- Header Section -->
+<header>
+  <div class="con">
+    <div class="container1">
+          <div class="logo">
+            <span>Hamid<span class="dot">.</span></span>
+          </div>
 
-<body class="index-page">
+          <div class="menu" id="menu"><i class="fa-solid fa-bars"></i></div>
 
-  <header id="header" class="header d-flex align-items-center light-background sticky-top">
-    <div class="container position-relative d-flex align-items-center justify-content-between">
-
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="#hero" class="active">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#resume">Resume</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
-
-      <div class="header-social-links">
-        <a href="https://github.com/Hamid-Awol" class="github" target="_blank"><i class="bi bi-github"></i></a>
-        <a href="https://linkedin.com/in/hamidawol" class="linkedin" target="_blank"><i class="bi bi-linkedin"></i></a>
-      </div>
-
+          <div class="nav" id="nav">
+            <div class="times" id="times"><i class="fa-solid fa-xmark"></i></div>
+           <div>
+             <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skill">Skill</a>
+            <a href="#service">Service</a>
+            <a href="#project">Project</a>
+            <a href="#contact">Contact</a>
+           </div>
+          </div>
     </div>
-  </header>
-
-  <main class="main">
-
-    <!-- Hero Section -->
-    <section id="hero" class="hero section">
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row gy-4 align-items-center">
-          <div class="col-lg-6 order-2 order-lg-1">
-            <div class="hero-content">
-              <h1 data-aos="fade-up" data-aos-delay="200">Hello, I'm <span class="highlight">Hamid Awol</span></h1>
-              <h2 data-aos="fade-up" data-aos-delay="300">FullStack <span class="typed" data-typed-items="Developer, JavaScript Expert, React Specialist, Node.js Developer"></span></h2>
-              <p data-aos="fade-up" data-aos-delay="400">Passionate FullStack Developer with expertise in modern web technologies. I build scalable, performant applications with clean code and best practices.</p>
-              <div class="hero-actions" data-aos="fade-up" data-aos-delay="500">
-                <a href="#portfolio" class="btn btn-primary">View My Work</a>
-                <a href="#contact" class="btn btn-outline">Get In Touch</a>
-              </div>
-              <div class="social-links" data-aos="fade-up" data-aos-delay="600">
-                <a href="https://github.com/Hamid-Awol" target="_blank"><i class="bi bi-github"></i></a>
-                <a href="https://linkedin.com/in/hamidawol" target="_blank"><i class="bi bi-linkedin"></i></a>
-                <a href="https://tiktok.com/@hamidawol" target="_blank"><i class="bi bi-tiktok"></i></a>
-                <a href="https://t.me/hamidawol" target="_blank"><i class="bi bi-telegram"></i></a>
-                <a href="https://youtube.com/@hamidawol" target="_blank"><i class="bi bi-youtube"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6 order-1 order-lg-2">
-            <div class="hero-image" data-aos="zoom-in" data-aos-delay="300">
-              <div class="image-wrapper">
-                <img src="assets/img/profile/About.png" alt="Hamid Awol" class="img-fluid">
-                <div class="floating-elements">
-                  <div class="floating-card design" data-aos="fade-left" data-aos-delay="700">
-                    <i class="bi bi-code-slash"></i>
-                    <span>Frontend</span>
-                  </div>
-                  <div class="floating-card code" data-aos="fade-right" data-aos-delay="800">
-                    <i class="bi bi-server"></i>
-                    <span>Backend</span>
-                  </div>
-                  <div class="floating-card creativity" data-aos="fade-up" data-aos-delay="900">
-                    <i class="bi bi-database"></i>
-                    <span>Database</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about section">
-      <div class="container section-title" data-aos="fade-up">
-        <h2>About Me</h2>
-        <p>FullStack Developer with 5+ years of experience building modern web applications</p>
-      </div>
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row align-items-center justify-content-between gy-5 mb-5">
-          <div class="col-lg-7" data-aos="fade-right" data-aos-delay="150">
-            <div class="intro-content">
-              <span class="eyebrow">FullStack Developer</span>
-              <h2 class="headline">Crafting digital solutions with modern technologies and clean architecture</h2>
-              <p class="lead">
-                I specialize in building full-stack applications using JavaScript, React, Node.js, and modern web technologies. With a strong foundation in both frontend and backend development, I create scalable, maintainable solutions.
-              </p>
-              <p>
-                My approach combines technical expertise with user-centric design principles. I enjoy solving complex problems and turning ideas into functional, beautiful applications that deliver value.
-              </p>
-
-              <div class="cta-group">
-                <a href="#portfolio" class="btn-ghost">
-                  View Projects <i class="bi bi-arrow-up-right"></i>
-                </a>
-                <a href="#contact" class="link-underline">
-                  Contact Me <i class="bi bi-envelope"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-5" data-aos="zoom-in" data-aos-delay="250">
-            <figure class="profile-figure text-center text-lg-end">
-              <img src="assets/img/profile/profile-square-11 .jpg" alt="Hamid Awol" class="img-fluid profile-photo">
-            </figure>
-          </div>
-        </div>
-
-        <!-- Skills Grid -->
-        <div class="mb-5">
-          <div class="row g-4">
-            <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="120">
-              <div class="skill-item">
-                <i class="bi bi-braces"></i>
-                <h3>Frontend</h3>
-                <p>React, Vue.js, TypeScript, Next.js</p>
-              </div>
-            </div>
-            <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="180">
-              <div class="skill-item">
-                <i class="bi bi-server"></i>
-                <h3>Backend</h3>
-                <p>Node.js, Express, Python, Django</p>
-              </div>
-            </div>
-            <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="240">
-              <div class="skill-item">
-                <i class="bi bi-database"></i>
-                <h3>Database</h3>
-                <p>MongoDB, PostgreSQL, Redis, Firebase</p>
-              </div>
-            </div>
-            <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="300">
-              <div class="skill-item">
-                <i class="bi bi-cloud"></i>
-                <h3>DevOps</h3>
-                <p>AWS, Docker, CI/CD, Kubernetes</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Resume Section -->
-    <section id="resume" class="resume section">
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Resume</h2>
-        <p>My professional journey and technical expertise</p>
-      </div>
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row">
-          <div class="col-lg-6">
-            <!-- Education Section -->
-            <div class="resume-item" data-aos="fade-up">
-              <h3 class="resume-title">Education</h3>
-              <div class="resume-content">
-                <article class="education-item">
-                  <h4>BSc Computer Science</h4>
-                  <h5>2016 - 2020</h5>
-                  <p class="institution"><em>University of Technology</em></p>
-                  <p>Specialized in Software Engineering and Web Technologies</p>
-                </article>
-              </div>
-            </div>
-
-            <!-- Skills Section -->
-            <div class="resume-item skills-animation" data-aos="fade-up">
-              <h3 class="resume-title">Technical Skills</h3>
-              <div class="resume-content">
-                <div class="skill-item">
-                  <h4>Frontend Development</h4>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                </div>
-
-                <div class="skill-item">
-                  <h4>Backend Development</h4>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                </div>
-
-                <div class="skill-item">
-                  <h4>Database Management</h4>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                </div>
-
-                <div class="skill-item">
-                  <h4>DevOps & Cloud</h4>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6">
-            <!-- Experience Section -->
-            <div class="resume-item" data-aos="fade-up" data-aos-delay="100">
-              <h3 class="resume-title">Experience</h3>
-              <div class="resume-content">
-                <article class="experience-item">
-                  <h4>Senior FullStack Developer</h4>
-                  <h5>2022 - Present</h5>
-                  <p class="company"><em>Tech Solutions Inc.</em></p>
-                  <ul>
-                    <li>Lead development of enterprise web applications</li>
-                    <li>Architect scalable microservices infrastructure</li>
-                    <li>Mentor junior developers and conduct code reviews</li>
-                    <li>Implement CI/CD pipelines and DevOps practices</li>
-                  </ul>
-                </article>
-
-                <article class="experience-item">
-                  <h4>FullStack Developer</h4>
-                  <h5>2020 - 2022</h5>
-                  <p class="company"><em>Digital Agency</em></p>
-                  <ul>
-                    <li>Developed 50+ web applications for various clients</li>
-                    <li>Built RESTful APIs and integrated third-party services</li>
-                    <li>Optimized application performance and security</li>
-                    <li>Collaborated with UX/UI designers and product managers</li>
-                  </ul>
-                </article>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services" class="services section">
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Services</h2>
-        <p>Comprehensive web development solutions</p>
-      </div>
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row justify-content-center g-5">
-          <div class="col-md-6" data-aos="fade-right" data-aos-delay="100">
-            <div class="service-item">
-              <div class="service-icon">
-                <i class="bi bi-code-slash"></i>
-              </div>
-              <div class="service-content">
-                <h3>FullStack Development</h3>
-                <p>End-to-end web application development using modern JavaScript frameworks and backend technologies.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6" data-aos="fade-left" data-aos-delay="100">
-            <div class="service-item">
-              <div class="service-icon">
-                <i class="bi bi-phone-fill"></i>
-              </div>
-              <div class="service-content">
-                <h3>API Development</h3>
-                <p>RESTful and GraphQL API design, development, and integration with third-party services.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6" data-aos="fade-right" data-aos-delay="200">
-            <div class="service-item">
-              <div class="service-icon">
-                <i class="bi bi-database"></i>
-              </div>
-              <div class="service-content">
-                <h3>Database Design</h3>
-                <p>Database architecture, optimization, and migration for scalable applications.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6" data-aos="fade-left" data-aos-delay="200">
-            <div class="service-item">
-              <div class="service-icon">
-                <i class="bi bi-cloud"></i>
-              </div>
-              <div class="service-content">
-                <h3>DevOps & Deployment</h3>
-                <p>CI/CD pipeline setup, cloud infrastructure management, and application deployment.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section">
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Portfolio</h2>
-        <p>Selected projects showcasing my expertise</p>
-      </div>
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="200">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-fullstack">FullStack</li>
-            <li data-filter=".filter-frontend">Frontend</li>
-            <li data-filter=".filter-backend">Backend</li>
-          </ul>
-
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="300">
-            
-            <!-- Project 1: YouTube Clone -->
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-frontend">
-              <div class="portfolio-card">
-                <div class="portfolio-img">
-                  <img src="assets/img/portfolio/portfolio-1.webp" alt="YouTube Clone" class="img-fluid">
-                </div>
-                <div class="portfolio-info">
-                  <h4>YouTube Clone</h4>
-                  <p>A responsive YouTube interface clone with modern features</p>
-                  
-                  <div class="demo-links">
-                    <a href="https://github.com/Hamid-Awol/youtube-clone" class="demo-link" target="_blank" title="View Code">
-                      <i class="bi bi-github"></i>
-                    </a>
-                    <a href="https://youtube-clone-demo.com" class="demo-link" target="_blank" title="Live Demo">
-                      <i class="bi bi-play-circle"></i>
-                    </a>
-                  </div>
-                  
-                  <div class="technologies-used">
-                    <h5>Technologies:</h5>
-                    <div class="tech-tags">
-                      <span>HTML5</span>
-                      <span>CSS3</span>
-                      <span>JavaScript</span>
-                      <span>Responsive Design</span>
-                      <span>Media Queries</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Project 2: E-commerce Platform -->
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-fullstack">
-              <div class="portfolio-card">
-                <div class="portfolio-img">
-                  <img src="assets/img/portfolio/portfolio-2.webp" alt="E-commerce Platform" class="img-fluid">
-                </div>
-                <div class="portfolio-info">
-                  <h4>E-commerce Platform</h4>
-                  <p>Full-featured online shopping platform with payment integration</p>
-                  
-                  <div class="demo-links">
-                    <a href="https://github.com/Hamid-Awol/ecommerce-platform" class="demo-link" target="_blank" title="View Code">
-                      <i class="bi bi-github"></i>
-                    </a>
-                    <a href="https://ecommerce-demo.com" class="demo-link" target="_blank" title="Live Demo">
-                      <i class="bi bi-play-circle"></i>
-                    </a>
-                  </div>
-                  
-                  <div class="technologies-used">
-                    <h5>Technologies:</h5>
-                    <div class="tech-tags">
-                      <span>React</span>
-                      <span>Node.js</span>
-                      <span>Express</span>
-                      <span>MongoDB</span>
-                      <span>Stripe API</span>
-                      <span>JWT</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Project 3: REST API Service -->
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-backend">
-              <div class="portfolio-card">
-                <div class="portfolio-img">
-                  <img src="assets/img/portfolio/portfolio-3.webp" alt="API Service" class="img-fluid">
-                </div>
-                <div class="portfolio-info">
-                  <h4>REST API Service</h4>
-                  <p>Scalable REST API with authentication and rate limiting</p>
-                  
-                  <div class="demo-links">
-                    <a href="https://github.com/Hamid-Awol/api-service" class="demo-link" target="_blank" title="View Code">
-                      <i class="bi bi-github"></i>
-                    </a>
-                    <a href="https://api-demo.com" class="demo-link" target="_blank" title="Live Demo">
-                      <i class="bi bi-play-circle"></i>
-                    </a>
-                  </div>
-                  
-                  <div class="technologies-used">
-                    <h5>Technologies:</h5>
-                    <div class="tech-tags">
-                      <span>Node.js</span>
-                      <span>Express</span>
-                      <span>PostgreSQL</span>
-                      <span>JWT</span>
-          
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Project 4: Task Management App -->
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-fullstack">
-              <div class="portfolio-card">
-                <div class="portfolio-img">
-                  <img src="assets/img/portfolio/portfolio-4.webp" alt="Task Management App" class="img-fluid">
-                </div>
-                <div class="portfolio-info">
-                  <h4>Task Management App</h4>
-                  <p>Collaborative task management with real-time updates</p>
-                  
-                  <div class="demo-links">
-                    <a href="https://github.com/Hamid-Awol/task-manager" class="demo-link" target="_blank" title="View Code">
-                      <i class="bi bi-github"></i>
-                    </a>
-                    <a href="https://taskmanager-demo.com" class="demo-link" target="_blank" title="Live Demo">
-                      <i class="bi bi-play-circle"></i>
-                    </a>
-                  </div>
-                  
-                  <div class="technologies-used">
-                    <h5>Technologies:</h5>
-                    <div class="tech-tags">
-                      <span>Vue.js</span>
-                      <span>Python</span>
-                      <span>Django</span>
-                      <span>PostgreSQL</span>
-                      <span>WebSocket</span>
-                      <span>Redis</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Project 5: Weather Dashboard -->
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-frontend">
-              <div class="portfolio-card">
-                <div class="portfolio-img">
-                  <img src="assets/img/portfolio/portfolio-5.webp" alt="Weather Dashboard" class="img-fluid">
-                </div>
-                <div class="portfolio-info">
-                  <h4>Weather Dashboard</h4>
-                  <p>Real-time weather information with interactive maps</p>
-                  
-                  <div class="demo-links">
-                    <a href="https://github.com/Hamid-Awol/weather-dashboard" class="demo-link" target="_blank" title="View Code">
-                      <i class="bi bi-github"></i>
-                    </a>
-                    <a href="https://weather-demo.com" class="demo-link" target="_blank" title="Live Demo">
-                      <i class="bi bi-play-circle"></i>
-                    </a>
-                  </div>
-                  
-                  <div class="technologies-used">
-                    <h5>Technologies:</h5>
-                    <div class="tech-tags">
-                      <span>React</span>
-                      <span>TypeScript</span>
-                      <span>Weather API</span>
-                      <span>Chart.js</span>
-                      <span>Leaflet Maps</span>
-                      <span>SCSS</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Project 6: Blog Platform -->
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-fullstack">
-              <div class="portfolio-card">
-                <div class="portfolio-img">
-                  <img src="assets/img/portfolio/portfolio-6.webp" alt="Blog Platform" class="img-fluid">
-                </div>
-                <div class="portfolio-info">
-                  <h4>Blog Platform</h4>
-                  <p>Modern blogging platform with CMS features</p>
-                  
-                  <div class="demo-links">
-                    <a href="https://github.com/Hamid-Awol/blog-platform" class="demo-link" target="_blank" title="View Code">
-                      <i class="bi bi-github"></i>
-                    </a>
-                    <a href="https://blog-demo.com" class="demo-link" target="_blank" title="Live Demo">
-                      <i class="bi bi-play-circle"></i>
-                    </a>
-                  </div>
-                  
-                  <div class="technologies-used">
-                    <h5>Technologies:</h5>
-                    <div class="tech-tags">
-                      <span>Next.js</span>
-                      <span>Node.js</span>
-                      <span>MongoDB</span>
-                      <span>GraphQL</span>
-                      <span>AWS S3</span>
-                      <span>Cloudinary</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact section">
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
-        <p>Let's work together on your next project</p>
-      </div>
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row g-4 g-lg-5">
-          <div class="col-lg-5">
-            <div class="info-box" data-aos="fade-up" data-aos-delay="200">
-              <h3>Get In Touch</h3>
-              <p>Available for freelance projects and full-time opportunities</p>
-
-              <div class="info-item" data-aos="fade-up" data-aos-delay="300">
-                <div class="icon-box">
-                  <i class="bi bi-envelope"></i>
-                </div>
-                <div class="content">
-                  <h4>Email</h4>
-                  <p>hamid.awol.werkicho@gmail.com</p>
-                </div>
-              </div>
-
-              <div class="info-item" data-aos="fade-up" data-aos-delay="400">
-                <div class="icon-box">
-                  <i class="bi bi-geo-alt"></i>
-                </div>
-                <div class="content">
-                  <h4>Location</h4>
-                  <p>Remote / Available Worldwide</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-7">
-            <div class="contact-form" data-aos="fade-up" data-aos-delay="300">
-              <h3>Send Message</h3>
-              <form id="contactForm" class="php-email-form">
-                <div class="row gy-4">
-                  <div class="col-md-6">
-                    <input type="text" name="name" class="form-control" placeholder="Your Name" required>
-                  </div>
-
-                  <div class="col-md-6">
-                    <input type="email" class="form-control" name="email" placeholder="Your Email" required>
-                  </div>
-
-                  <div class="col-12">
-                    <input type="text" class="form-control" name="subject" placeholder="Subject" required>
-                  </div>
-
-                  <div class="col-12">
-                    <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
-                  </div>
-
-                  <div class="col-12 text-center">
-                    <button type="submit" class="btn">Send Message</button>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer id="footer" class="footer">
+  </div>
+</header>
+<!-- Home Section -->
+ <section class="home" id="home">
+  <div class="con">
     <div class="container">
-      <div class="copyright text-center">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">Hamid Awol</strong> <span>All Rights Reserved</span></p>
-      </div>
-      <div class="social-links d-flex justify-content-center">
-        <a href="https://github.com/Hamid-Awol" target="_blank"><i class="bi bi-github"></i></a>
-        <a href="https://linkedin.com/in/hamidawol" target="_blank"><i class="bi bi-linkedin"></i></a>
-        <a href="https://tiktok.com/@hamidawol" target="_blank"><i class="bi bi-tiktok"></i></a>
-        <a href="https://t.me/hamidawol" target="_blank"><i class="bi bi-telegram"></i></a>
-        <a href="https://youtube.com/@hamidawol" target="_blank"><i class="bi bi-youtube"></i></a>
-      </div>
+        <div class="home-text">
+          
+            <h1 id="name">Hi, i'm Hamid<span class="dot"></span><br>
+            <span class="dot">AI Powered Web Application Developer</span></h1>
+            <div class="descr">
+            <p>Crafting clean, modern, and user-friendly web experinces.</p>
+            <p>Full-Stack development is not just my skill it's my passion.</p>
+            <p>I'm Computer Science Student at Arsi University. </p>
+            </div>
+
+          <div class="button">
+            <a href="#contact" class="btn1">Get in touch  <i class="fa fa-arrow-right" ></i></a>
+            <a href="#project" class="btn2">Watch Projects </i></a>
+          </div>
+          
+            <div class="year" data-aos="flip-down" data-aos-duration="2000">
+
+           <div class="experience">
+            <i class="fa-solid fa-laptop"></i>
+            <h3>3+</h3>
+            <p>Years experience</p>
+           </div>
+
+           <div class="project">
+            <i class="fa-solid fa-terminal"></i>
+             <h3>5+</h3>
+            <p>Project</p>
+           </div>
+           
+             <div class="client">
+              <i class="fa-solid fa-circle-check"></i>
+             <h3>2+</h3>
+            <p>Happy client</p>
+           </div>
+        </div>
+        </div>
+
+        <div class="image" data-aos="fade-left" data-aos-duration="2000">
+          <img src="./images/Hamid.png" alt="home-image">
+        </div>
+     </div>
+           </div>
+        </div>
     </div>
+  </div>
+ </section>
+<!-- About Section -->
+ <section class="about" id="about">
+      <div class="con">
+        <!-- heading part -->
+        <div class="heading">
+          <h1><b>About Me</b> <span class="line"></span></h1>
+        </div>
+
+        <div class="container">
+          <div class="image " data-aos="fade-right" data-aos-duration="2000">
+            <img src="./images/Hamid2.png" alt="">
+          </div>
+
+          <div class="about-text">
+                <h2><b>Full Stack Developer</b></h2>
+                <div class="des">
+                  <p>I'm  Hamid Awol,a passionate Full-Stack Developer. I loves creating modern, responsive, and user-friendly websites using clean code and creative design.</p>
+                </div>
+
+                <div class="about-info" data-aos="fade-left" data-aos-duration="2000">
+                <div>
+                  <p><span class="dot"><b>Age:</b></span> 25</p>
+                  <p><span class="dot"><b>Gender:</b></span> Male</p>
+                  <p><span class="dot"><b>Language:</b></span> English,Amahric</p>
+                  <p><span class="dot"><b>Email: </b></span>hamidawol39@gmail.com</p>
+                </div>
+
+                <div>
+                  <p><span class="dot"><b>Work:</b></span> Full-Stack Developer</p>
+                  <p><span class="dot"><b>Freelance:</b></span> Available</p>
+                  <p><span class="dot"><b>Phone: </b></span>0921426433</p>
+                    <p><span class="dot"><b>Country:</b></span> Ethiopia</p>
+                </div>
+
+                </div>
+
+                <div class="link" data-aos="fade-left" data-aos-duration="2000">
+                    <a href="https://t.me/Hamid_Awol" class="icon"><i class="fa-brands fa-telegram" ></i></a>
+                    <a href="https://www.linkedin.com/in/hamid-awol-4185353a7?utm_source=share_via&utm_content=profile&utm_medium=member_android" class="icon"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.tiktok.com/@hamid_awol?_t=ZM-90bBtJdfuYK&_r=1" class="icon"><i class="fa-brands fa-tiktok"></i></a>
+                    <!-- Updated GitHub to Hamid_Awol -->
+                    <a href="https://github.com/Hamid_Awol" class="icon"><i class="fa-brands fa-github"></i></a>
+                </div>
+          </div>
+
+        </div>
+      </div>
+
+ </section>
+
+<!-- Skill Section -->
+  <section class="skill" id="skill">
+     <div class="con">
+      <div class="heading">
+          <h1 style="color: white;">Skills <span class="line"></span></h1>
+      </div>
+
+      <div class="container">
+          <div class="col">
+              <div class="skill-box">
+                  <div class="skill-name">
+                      <h3>HTML 5</h3>
+                      <div class="bar">
+                            <div class="progress"> 
+                                  <div class="pro1" data-aos="fade-right" data-aos-duration="40000">
+                                    
+                                  </div>
+                             </div>
+                            <span>98%</span>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="skill-box">
+                  <div class="skill-name">
+                      <h3>Css</h3>
+                      <div class="bar">
+                            <div class="progress"><div class="pro2" data-aos="fade-right" data-aos-duration="10000"></div></div>
+                            <span>90%</span>
+                      </div>
+                  </div>
+              </div>
+              <div class="skill-box">
+                  <div class="skill-name">
+                      <h3>Bootsrap 5</h3>
+                      <div class="bar">
+                            <div class="progress"><div class="pro3" data-aos="fade-right" data-aos-duration="10000"></div></div>
+                            <span>90%</span>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="skill-box">
+                  <div class="skill-name">
+                      <h3>JavaScript</h3>
+                      <div class="bar">
+                            <div class="progress"><div class="pro4" data-aos="fade-right" data-aos-duration="10000"></div></div>
+                            <span>70%</span>
+                      </div>
+                  </div>
+              </div>
+              <div class="skill-box">
+                  <div class="skill-name">
+                      <h3>Node.js</h3>
+                      <div class="bar">
+                            <div class="progress"><div class="pro5" data-aos="fade-right" data-aos-duration="4000"></div></div>
+                            <span>50%</span>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+             <div class="col">
+                 <div class="skill-box">
+                  <div class="skill-name">
+                      <h3>React js</h3>
+                      <div class="bar">
+                            <div class="progress"><div class="pro6" data-aos="fade-right" data-aos-duration="4000"></div></div>
+                            <span>90%</span>
+                      </div>
+                  </div>
+                 </div>
+
+                 <div class="skill-box">
+                  <div class="skill-name">
+                      <h3>PHP</h3>
+                      <div class="bar">
+                            <div class="progress"><div class="pro7" data-aos="fade-right" data-aos-duration="4000"></div></div>
+                            <span>77%</span>
+                      </div>
+                  </div>
+                 </div>
+
+                 <div class="skill-box">
+                  <div class="skill-name">
+                      <h3>Python</h3>
+                      <div class="bar">
+                            <div class="progress"><div class="pro8" data-aos="fade-right" data-aos-duration="4000"></div></div>
+                            <span>90%</span>
+                      </div>
+                  </div>
+                 </div>
+                 <div class="skill-box">
+                  <div class="skill-name">
+                      <h3>Mysql</h3>
+                      <div class="bar">
+                            <div class="progress"><div class="pro9" data-aos="fade-right" data-aos-duration="4000"></div></div>
+                            <span>80%</span>
+                      </div>
+                  </div>
+                 </div>
+                 <div class="skill-box">
+                  <div class="skill-name">
+                      <h3>github</h3>
+                      <div class="bar">
+                            <div class="progress"><div class="pro10" data-aos="fade-right" data-aos-duration="4000"></div></div>
+                            <span>60%</span>
+                      </div>
+                  </div>
+                 </div>
+             </div>
+
+      </div>
+      </div> 
+
+  </section>
+
+<!-- Service section -->
+<section class="service" id="service">
+	<div class="con">
+		 <div class="heading">
+          <h1><b>Services</b> <span class="line"></span></h1>
+         </div>
+
+		 <div class="container">
+
+			<div class="card"  data-aos="zoom-in" data-aos-duration="40000">
+				<div>
+					<i class="fa-solid fa-laptop-code"></i>
+				</div>
+				<h3>Web Development</h3>
+				<p>Building responsive, dynamicc, and user-friendly websites using modern technologies</p>
+			</div>
+
+			<div class="card"  data-aos="zoom-in" data-aos-duration="40000">
+				<div>
+					<i class="fa-brands fa-web-awesome"></i>
+				</div>
+				<h3>App Development</h3>
+				<p>Creating attractive, clean and professional website layout with usablity.</p>
+			</div>
+
+			<div class="card"  data-aos="zoom-in" data-aos-duration="40000">
+				<div>
+					<i class="fa-solid fa-school"></i>
+				</div>
+				<h3>Content Creation</h3>
+				<p>Teaching coding skills,web technologies, and development basics for beginners.</p>
+			</div>
+
+			<div class="card"  data-aos="zoom-in" data-aos-duration="40000">
+				<div>
+					<i class="fa-solid fa-video"></i>
+				</div>
+				<h3>Video Editing</h3>
+				<p>Editing videos professionally with smooth transitions, effects, and creative storytelling.</p>
+			</div>
+
+
+		 </div>
+
+	</div>
+</section>
+
+<!-- Project Section -->
+ <section class="project1" id="project">
+        <div class="con">
+          <div class="heading proj">
+                <h1><b>Projects </b><span class="line"></span></h1>
+          </div>
+          <div class="container">
+                <!-- <div class="pro-card" data-aos="flip-down" data-aos-duration="2000">
+                    
+                </div> -->
+                <div class="pro-card " data-aos="flip-down" data-aos-duration="2000">
+                       <img class="pro-img" src="./images/hamid2.png" alt="project image"> 
+                      <div class="pro-link">
+                        <h3>Student Managment System</h3>
+                        <p>Student Managment System by using <span class="tech">HTML,CSS,JavaScript</span></p>
+                       <div class="links">
+                         <a href="#/" target="_blank"><i class="fa-solid fa-eye"></i></a>
+                        <!-- Updated GitHub to Hamid_Awol -->
+                        <a href="#" target="_blank"><i class="fa-brands fa-github"></i></a>
+                       </div>
+                      </div>
+                </div>      
+
+                <div class="pro-card " data-aos="flip-down" data-aos-duration="2000">
+                  <img class="pro-img" src="/images/hamid2.png" alt="project image"> 
+                      <div class="pro-link">
+                       <h3>Website</h3>
+                        <p>Website by using <span class="tech">HTML,CSS,JavaScript</span></p>
+                       <div class="links">
+                         <a href="#" target="_blank"><i class="fa-solid fa-eye"></i></a>
+                        <!-- Updated GitHub to Hamid_Awol -->
+                        <a href="#" target="_blank"><i class="fa-brands fa-github"></i></a>
+                       </div>
+                      </div>
+                </div>
+
+                <div class="pro-card" id="pr3" data-aos="flip-down" data-aos-duration="2000">
+                    <img class="pro-img" src="/images/hamid2.png" alt="project image"> 
+                      <div class="pro-link">
+                         <h3>Website</h3>
+                        <p>Website by using <span class="tech">HTML,CSS,JavaScript</span></p>
+                       <div class="links">
+                         <a href="#" target="_blank"><i class="fa-solid fa-eye"></i></a>
+                        <!-- Updated GitHub to Hamid_Awol -->
+                        <a href="#" target="_blank"><i class="fa-brands fa-github"></i></a>
+                       </div>
+                      </div>
+                </div>
+          </div>
+          <div class="container">
+             <div class="pro-card" id="pr5" data-aos="flip-down" data-aos-duration="2000">
+                     <img class="pro-img" src="/images/Hamidb.png" alt="project image"> 
+
+                      <div class="pro-link">
+                         <h3>Website</h3>
+                        <p>Website by using  <br> <span class="tech">HTML,CSS,JavaScript</span></p>
+                       <div class="links">
+                         <a href="#" target="_blank"><i class="fa-solid fa-eye"></i></a>
+                        <!-- Updated GitHub to Hamid_Awol -->
+                        <a href="#" target="_blank"><i class="fa-brands fa-github"></i></a>
+                       </div>
+                      </div>                    
+              </div>
+              <div class="pro-card" id="pr6" data-aos="flip-up" data-aos-duration="40000">
+                  <img class="pro-img" src="/images//Hamidb.png" alt="project image"> 
+                     
+                      <div class="pro-link">
+                         <h3>Sinup and Login Form Website</h3>
+                        <p> Website by using <br> <span class="tech">HTML,CSS,JavaScript </span></p>
+                       <div class="links">
+                         <a href="#" target="_blank"><i class="fa-solid fa-eye"></i></a>
+                        <!-- Updated GitHub to Hamid_Awol -->
+                        <a href="https://github.com/Hamid_Awol  target="_blank"><i class="fa-brands fa-github"></i></a>
+                       </div>
+                      </div>                        
+              </div>
+              <div class="pro-card" id="pr7" data-aos="flip-down" data-aos-duration="2000">
+                <img class="pro-img" src="/images/Hamidb.png" alt="project image"> 
+                     
+                      <div class="pro-link">
+                         <h3>House Price Predictor app</h3>
+                        <p>Website by using <br> <span class="tech">HTML,CSS,JavaScript </span></p>
+                       <div class="links">
+                         <a href="# target="_blank"><i class="fa-solid fa-eye"></i></a>
+                        <!-- Updated GitHub to Hamid_Awol -->
+                        <a href="https://github.com/Hamid_Awol/Qr-code-generator-" target="_blank"><i class="fa-brands fa-github"></i></a>
+                       </div>
+                      </div>               
+              </div>
+          </div>
+
+        </div>
+ </section>
+ <!-- Media section -->
+  <section class="media">
+    <div class="heading">
+                <h1>Follow Me <span class="line"></span></h1>
+    </div>
+     <div class="link media-link" >
+                    <a href="https://t.me/Hamid_Awol" class="icon"><i class="fa-brands fa-telegram" ></i></a>
+                    <a href="https://www.linkedin.com/in/hamid-awol-4185353a7?utm_source=share_via&utm_content=profile&utm_medium=member_android" class="icon"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.tiktok.com/@hamid_awol?_t=ZM-90bBtJdfuYK&_r=1" class="icon"><i class="fa-brands fa-tiktok"></i></a>
+                    <!-- Updated GitHub to Hamid_Awol -->
+                    <a href="https://github.com/Hamid_Awol" class="icon"><i class="fa-brands fa-github"></i></a>
+                </div>
+
+  </section>
+ <!--Contact Section -->
+ <section class="contact" id="contact">
+	<div class="con">
+		<div class="heading">
+                <h1>Contact Me <span class="line"></span></h1>
+    </div>
+		<div class="contact-con">
+			<div class="card1" data-aos="fade-up" data-aos-duration="2000">
+				<div class="ico">
+					<i class="fa-solid fa-envelope"></i>
+
+				</div>
+				<h3>Email</h3>
+				<p>hamidawol39@gmail.com</p>
+			</div>
+			<div class="card1" data-aos="fade-down" data-aos-duration="2000">
+				<div class="ico">
+					<i class="fa-solid fa-phone-flip"></i>
+				</div>
+				
+				<h3>My Phone</h3>
+				<p>+251912426433</p>
+			</div>
+			<div class="card1" data-aos="fade-up" data-aos-duration="2000">
+				<div class="ico">
+					<i class="fa-solid fa-location-dot"></i>
+				</div>
+				
+				<h3>My Adress</h3>
+				<p>Centeral Ethiopia ,Mareko Special Woreda</p>
+			</div>
+		</div>
+
+
+		<div class="container contact-info1" id="cont">
+			<form data-aos="fade-up" data-aos-duration="2000" >
+				<div>
+					<input type="text" placeholder="Name" id="name1">
+				</div>
+				<div>
+					<input type="email" placeholder="Email" id="email">
+				</div>
+				<div>
+					<input type="text" placeholder="Number" id="number">
+				</div>
+				<div>
+					<textarea name="" id="" placeholder="Meassge" ></textarea>
+				</div>
+
+				<div>
+          <a href="#cont" class="btn send-btn" onclick="check()">Send Message</a>
+			  </div>
+
+			</form>
+
+			<div class="map" data-aos="fade-left" data-aos-duration="2000">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31606.744313871164!2d38.5121134613701!3d8.015117135588028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x17b361476700d30f%3A0x92aae66751bccf68!2sKoshe!5e0!3m2!1sen!2set!4v1773482075942!5m2!1sen!2set" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</div>
+
+		</div>
+	</div>
+ </section>
+ <!-- Footer Section -->
+  <footer>
+	<div class="con">
+	<div class="container">
+<div class="cont1">
+  	<div class="foot-desc">
+		 <h3>Hamid<div class="line line2"></div></h3>
+		<p>I'm a passionate Full-Stack Developer. I loves creating modern, responsive, and user-friendly websites using clean code and creative design.</p>
+
+	</div>
+
+	<div class="quick">
+		    
+        <h3>Quick link <div class="line line2"></div></h3>
+		
+             <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skill">Skills</a>
+            <a href="#service">Services</a>
+            <a href="#project">Projects</a>
+            <a href="#contact">Contact</a>
+           
+	</div>
+</div>
+
+<div class="cont1" >
+  	<div class="fopt-pro">
+		  <h3>Project <div class="line line2"></div></h3>
+		    <a href="#">SMS</a>
+            <a href="#">Koshe School</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Central Ethiopia</a>
+	</div>
+
+  <div class="foot-skill">
+		  <h3>Skill <div class="line2"></div></h3>
+		    <p>HTML 5</p>
+        <p>CSS</p>
+        <p>Bootsrap 5</p>
+        <p>JavaScript</p>
+        <p>React Js</p>
+        <p>Php</p>
+	</div>
+</div>
+
+	</div>
+	<hr>
+	<div class="hr">
+    <p>&copy; 2026 Hamid . All rights reserved</p>
+  <div class="link">
+                    <a href="https://t.me/Hamid_Awol" class="icon"><i class="fa-brands fa-telegram"></i></a>
+                    <a href="https://www.linkedin.com/in/hamid-awol-4185353a7?utm_source=share_via&utm_content=profile&utm_medium=member_android" class="icon"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.tiktok.com/@hamid_awol?_t=ZM-90bBtJdfuYK&_r=1" class="icon"><i class="fa-brands fa-tiktok"></i></a>
+                    <!-- Updated GitHub to Hamid_Awol -->
+                    <a href="https://github.com/Hamid_Awol" class="icon"><i class="fa-brands fa-github"></i></a>
+                </div>
+  </div>
+	</div>
   </footer>
 
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <script>
+    let menu=document.getElementById("menu");
+    let nav=document.getElementById("nav");
+    let times=document.getElementById("times");
+    // to open nav
+  menu.addEventListener("click",function(){
+    nav.style.right="0";
+  })
+// to cose nav
+  times.addEventListener("click",function(){
+    nav.style.right="-100%";
+  })
+  function check() {
+      // Get input values
+      let name = document.getElementById("name1").value;
+      let email = document.getElementById("email").value;
+      let number = document.getElementById("number").value;
+      
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+      // Regular expressions
+      let nameRegex = /^[A-Za-z\s]+$/;
+      let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      let numberRegex = /^[0-9]+$/;
+  
+      // Validation checks
+      if (name === "") {
+         alert("Name field is required!");
+      } else if (!nameRegex.test(name)) {
+         alert("Name must contain only letters!");
+      } else if (email === "") {
+        alert("Email field is required!");
+      } else if (!emailRegex.test(email)) {
+        alert("Please enter a valid email address!");
+      } else if (number === "") {
+        alert("Number field is required!");
+      } else if (!numberRegex.test(number)) {
+        alert("Number must contain digits only!");
+      } else {
+        alert("✅ All fields are valid!");
+      }
+    }
+  error.innerHTML=erro;
 
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
+	    // Smooth scrolling for navigation links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+anchor.addEventListener('click', function (e) {
+e.preventDefault();
+                
+const targetId = this.getAttribute('href');
+if(targetId === '#') return;
+                
+const targetElement = document.querySelector(targetId);
+if(targetElement) {
+window.scrollTo({
 
+behavior: 'smooth'});
+                }
+            });
+        });
+ 
+</script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
+
+</script>
+
+<script>
+  AOS.init();
+</script>
 </body>
 
 </html>
