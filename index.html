@@ -1,609 +1,508 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="htmlRoot">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hamid's Portfolio</title>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-20QJ56G8M3"></script>
-    <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-20QJ56G8M3');
-    </script>
-
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+    <title>Hamid Awol — Fullstack Developer Portfolio</title>
+    <meta name="description" content="Hamid Awol — AI-Powered Fullstack Developer. Computer Science student at Arsi University.">
+    <meta name="keywords" content="fullstack developer, portfolio, react, node.js, python, hamid awol, ethiopia">
+    <meta property="og:title" content="Hamid Awol — Fullstack Developer">
+    <meta property="og:description" content="Passionate Fullstack Developer crafting modern web experiences.">
+    
+    <!-- External CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<!-- Header Section -->
-<header>
-  <div class="con">
-    <div class="container1">
-          <div class="logo">
-            <span>Hamid<span class="dot">.</span></span>
-          </div>
 
-          <div class="menu" id="menu"><i class="fa-solid fa-bars"></i></div>
-
-          <div class="nav" id="nav">
-            <div class="times" id="times"><i class="fa-solid fa-xmark"></i></div>
-           <div>
-             <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#skill">Skill</a>
-            <a href="#service">Service</a>
-            <a href="#project">Project</a>
-            <a href="#contact">Contact</a>
-           </div>
-          </div>
+    <!-- PRELOADER -->
+    <div id="preloader">
+        <div class="loader-ring"></div>
     </div>
-  </div>
-</header>
-<!-- Home Section -->
- <section class="home" id="home">
-  <div class="con">
-    <div class="container">
-        <div class="home-text">
-          
-            <h1 id="name">Hi, i'm Hamid<span class="dot"></span><br>
-            <span class="dot">AI Powered Web Application Developer</span></h1>
-            <div class="descr">
-            <p>Crafting clean, modern, and user-friendly web experinces.</p>
-            <p>Full-Stack development is not just my skill it's my passion.</p>
-            <p>I'm Computer Science Student at Arsi University. </p>
-            </div>
 
-          <div class="button">
-            <a href="#contact" class="btn1">Get in touch  <i class="fa fa-arrow-right" ></i></a>
-            <a href="#project" class="btn2">Watch Projects </i></a>
-          </div>
-          
-            <div class="year" data-aos="flip-down" data-aos-duration="2000">
-
-           <div class="experience">
-            <i class="fa-solid fa-laptop"></i>
-            <h3>3+</h3>
-            <p>Years experience</p>
-           </div>
-
-           <div class="project">
-            <i class="fa-solid fa-terminal"></i>
-             <h3>5+</h3>
-            <p>Project</p>
-           </div>
-           
-             <div class="client">
-              <i class="fa-solid fa-circle-check"></i>
-             <h3>2+</h3>
-            <p>Happy client</p>
-           </div>
-        </div>
-        </div>
-
-        <div class="image" data-aos="fade-left" data-aos-duration="2000">
-          <img src="images/Hamid.png" alt="home-image">
-        </div>
-     </div>
-           </div>
-        </div>
-    </div>
-  </div>
- </section>
-<!-- About Section -->
- <section class="about" id="about">
-      <div class="con">
-        <!-- heading part -->
-        <div class="heading">
-          <h1><b>About Me</b> <span class="line"></span></h1>
-        </div>
-
+    <!-- ============================================================ NAVBAR ============================================================ -->
+    <nav class="navbar navbar-expand-lg fixed-top" role="navigation">
         <div class="container">
-          <div class="image " data-aos="fade-right" data-aos-duration="2000">
-            <img src="./images/Hamid2.png" alt="">
-          </div>
-
-          <div class="about-text">
-                <h2><b>Full Stack Developer</b></h2>
-                <div class="des">
-                  <p>I'm  Hamid Awol,a passionate Full-Stack Developer. I loves creating modern, responsive, and user-friendly websites using clean code and creative design.</p>
-                </div>
-
-                <div class="about-info" data-aos="fade-left" data-aos-duration="2000">
-                <div>
-                  <p><span class="dot"><b>Age:</b></span> 25</p>
-                  <p><span class="dot"><b>Gender:</b></span> Male</p>
-                  <p><span class="dot"><b>Language:</b></span> English,Amahric</p>
-                  <p><span class="dot"><b>Email: </b></span>hamidawol39@gmail.com</p>
-                </div>
-
-                <div>
-                  <p><span class="dot"><b>Work:</b></span> Full-Stack Developer</p>
-                  <p><span class="dot"><b>Freelance:</b></span> Available</p>
-                  <p><span class="dot"><b>Phone: </b></span>0921426433</p>
-                    <p><span class="dot"><b>Country:</b></span> Ethiopia</p>
-                </div>
-
-                </div>
-
-                <div class="link" data-aos="fade-left" data-aos-duration="2000">
-                    <a href="https://t.me/Hamid_Awol" class="icon"><i class="fa-brands fa-telegram" ></i></a>
-                    <a href="https://www.linkedin.com/in/hamid-awol-4185353a7?utm_source=share_via&utm_content=profile&utm_medium=member_android" class="icon"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://www.tiktok.com/@hamid_awol?_t=ZM-90bBtJdfuYK&_r=1" class="icon"><i class="fa-brands fa-tiktok"></i></a>
-                    <!-- Updated GitHub to Hamid_Awol -->
-                    <a href="https://github.com/Hamid_Awol" class="icon"><i class="fa-brands fa-github"></i></a>
-                </div>
-          </div>
-
+            <a class="navbar-brand" href="#home">Hamid<span>.</span></a>
+            <div class="d-flex align-items-center gap-2 d-lg-none">
+                <button class="dark-mode-btn" id="darkToggleMobile" aria-label="Toggle dark mode">
+                    <i class="fa-solid fa-moon" id="darkIconMobile"></i>
+                </button>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto align-items-lg-center gap-1">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+                <button class="dark-mode-btn ms-3 d-none d-lg-flex" id="darkToggle" aria-label="Toggle dark mode">
+                    <i class="fa-solid fa-moon" id="darkIcon"></i>
+                </button>
+            </div>
         </div>
-      </div>
+    </nav>
 
- </section>
-
-<!-- Skill Section -->
-  <section class="skill" id="skill">
-     <div class="con">
-      <div class="heading">
-          <h1 style="color: white;">Skills <span class="line"></span></h1>
-      </div>
-
-      <div class="container">
-          <div class="col">
-              <div class="skill-box">
-                  <div class="skill-name">
-                      <h3>HTML 5</h3>
-                      <div class="bar">
-                            <div class="progress"> 
-                                  <div class="pro1" data-aos="fade-right" data-aos-duration="40000">
-                                    
-                                  </div>
-                             </div>
-                            <span>98%</span>
-                      </div>
-                  </div>
-              </div>
-
-              <div class="skill-box">
-                  <div class="skill-name">
-                      <h3>Css</h3>
-                      <div class="bar">
-                            <div class="progress"><div class="pro2" data-aos="fade-right" data-aos-duration="10000"></div></div>
-                            <span>90%</span>
-                      </div>
-                  </div>
-              </div>
-              <div class="skill-box">
-                  <div class="skill-name">
-                      <h3>Bootsrap 5</h3>
-                      <div class="bar">
-                            <div class="progress"><div class="pro3" data-aos="fade-right" data-aos-duration="10000"></div></div>
-                            <span>90%</span>
-                      </div>
-                  </div>
-              </div>
-
-              <div class="skill-box">
-                  <div class="skill-name">
-                      <h3>JavaScript</h3>
-                      <div class="bar">
-                            <div class="progress"><div class="pro4" data-aos="fade-right" data-aos-duration="10000"></div></div>
-                            <span>70%</span>
-                      </div>
-                  </div>
-              </div>
-              <div class="skill-box">
-                  <div class="skill-name">
-                      <h3>Node.js</h3>
-                      <div class="bar">
-                            <div class="progress"><div class="pro5" data-aos="fade-right" data-aos-duration="4000"></div></div>
-                            <span>50%</span>
-                      </div>
-                  </div>
-              </div>
-          </div>
-
-             <div class="col">
-                 <div class="skill-box">
-                  <div class="skill-name">
-                      <h3>React js</h3>
-                      <div class="bar">
-                            <div class="progress"><div class="pro6" data-aos="fade-right" data-aos-duration="4000"></div></div>
-                            <span>90%</span>
-                      </div>
-                  </div>
-                 </div>
-
-                 <div class="skill-box">
-                  <div class="skill-name">
-                      <h3>PHP</h3>
-                      <div class="bar">
-                            <div class="progress"><div class="pro7" data-aos="fade-right" data-aos-duration="4000"></div></div>
-                            <span>77%</span>
-                      </div>
-                  </div>
-                 </div>
-
-                 <div class="skill-box">
-                  <div class="skill-name">
-                      <h3>Python</h3>
-                      <div class="bar">
-                            <div class="progress"><div class="pro8" data-aos="fade-right" data-aos-duration="4000"></div></div>
-                            <span>90%</span>
-                      </div>
-                  </div>
-                 </div>
-                 <div class="skill-box">
-                  <div class="skill-name">
-                      <h3>Mysql</h3>
-                      <div class="bar">
-                            <div class="progress"><div class="pro9" data-aos="fade-right" data-aos-duration="4000"></div></div>
-                            <span>80%</span>
-                      </div>
-                  </div>
-                 </div>
-                 <div class="skill-box">
-                  <div class="skill-name">
-                      <h3>github</h3>
-                      <div class="bar">
-                            <div class="progress"><div class="pro10" data-aos="fade-right" data-aos-duration="4000"></div></div>
-                            <span>60%</span>
-                      </div>
-                  </div>
-                 </div>
-             </div>
-
-      </div>
-      </div> 
-
-  </section>
-
-<!-- Service section -->
-<section class="service" id="service">
-	<div class="con">
-		 <div class="heading">
-          <h1><b>Services</b> <span class="line"></span></h1>
-         </div>
-
-		 <div class="container">
-
-			<div class="card"  data-aos="zoom-in" data-aos-duration="40000">
-				<div>
-					<i class="fa-solid fa-laptop-code"></i>
-				</div>
-				<h3>Web Development</h3>
-				<p>Building responsive, dynamicc, and user-friendly websites using modern technologies</p>
-			</div>
-
-			<div class="card"  data-aos="zoom-in" data-aos-duration="40000">
-				<div>
-					<i class="fa-brands fa-web-awesome"></i>
-				</div>
-				<h3>App Development</h3>
-				<p>Creating attractive, clean and professional website layout with usablity.</p>
-			</div>
-
-			<div class="card"  data-aos="zoom-in" data-aos-duration="40000">
-				<div>
-					<i class="fa-solid fa-school"></i>
-				</div>
-				<h3>Content Creation</h3>
-				<p>Teaching coding skills,web technologies, and development basics for beginners.</p>
-			</div>
-
-			<div class="card"  data-aos="zoom-in" data-aos-duration="40000">
-				<div>
-					<i class="fa-solid fa-video"></i>
-				</div>
-				<h3>Video Editing</h3>
-				<p>Editing videos professionally with smooth transitions, effects, and creative storytelling.</p>
-			</div>
-
-
-		 </div>
-
-	</div>
-</section>
-
-<!-- Project Section -->
- <section class="project1" id="project">
-        <div class="con">
-          <div class="heading proj">
-                <h1><b>Projects </b><span class="line"></span></h1>
-          </div>
-          <div class="container">
-                <!-- <div class="pro-card" data-aos="flip-down" data-aos-duration="2000">
-                    
-                </div> -->
-                <div class="pro-card " data-aos="flip-down" data-aos-duration="2000">
-                       <img class="pro-img" src="images/hamid3.png" alt="project image"> 
-                      <div class="pro-link">
-                        <h3>Student Managment System</h3>
-                        <p>Student Managment System by using <span class="tech">HTML,CSS,JavaScript</span></p>
-                       <div class="links">
-                         <a href="#/" target="_blank"><i class="fa-solid fa-eye"></i></a>
-                        <!-- Updated GitHub to Hamid_Awol -->
-                        <a href="#" target="_blank"><i class="fa-brands fa-github"></i></a>
-                       </div>
-                      </div>
-                </div>      
-
-                <div class="pro-card " data-aos="flip-down" data-aos-duration="2000">
-                  <img class="pro-img" src="images/hamid4.png" alt="project image"> 
-                      <div class="pro-link">
-                       <h3>Website</h3>
-                        <p>Website by using <span class="tech">HTML,CSS,JavaScript</span></p>
-                       <div class="links">
-                         <a href="#" target="_blank"><i class="fa-solid fa-eye"></i></a>
-                        <!-- Updated GitHub to Hamid_Awol -->
-                        <a href="#" target="_blank"><i class="fa-brands fa-github"></i></a>
-                       </div>
-                      </div>
+    <!-- ============================================================ HERO ============================================================ -->
+    <section id="home" class="section-padding">
+        <div class="container">
+            <div class="row align-items-center gy-5">
+                <div class="col-lg-7 col-md-12">
+                    <div class="hero-tag">Available for freelance work</div>
+                    <h1 class="hero-name">
+                        <span class="name-static">Hi, I'm </span><span class="name-accent">Hamid Awol</span>
+                    </h1>
+                    <p class="mb-1" style="color:#94a3b8;font-size:18px;font-family:var(--font-secondary);">
+                        <span id="typed-text"></span><span class="typing-cursor"></span>
+                    </p>
+                    <p class="hero-desc mt-3 mb-4">Crafting clean, modern, and intelligent web experiences. From concept to deployment — I build products people love.</p>
+                    <div class="d-flex flex-wrap gap-3 mb-4">
+                        <a href="#contact" class="btn btn-success px-4 py-2 fw-bold rounded-3" style="background:var(--primary);border:none;color:#0d1117;">
+                            Get In Touch <i class="fa-solid fa-arrow-right ms-1"></i>
+                        </a>
+                        <a href="#projects" class="btn px-4 py-2 fw-semibold rounded-3" style="border:1.5px solid var(--primary);color:var(--primary);">
+                            View Projects
+                        </a>
+                        <div class="cv-btn-group">
+                            <button class="cv-main-btn" id="cvTrigger" onclick="toggleCvDropdown()">
+                                <i class="fa-solid fa-file-user"></i> My CV
+                                <i class="fa-solid fa-chevron-down" style="font-size:12px;"></i>
+                            </button>
+                            <div class="cv-dropdown" id="cvDropdown">
+                                <a href="https://drive.google.com/file/d/126NnR0cdZ_Kn2o5tewt8NuCmzaXLVLAu/view?usp=sharing" 
+                                   target="_blank" 
+                                   rel="noopener noreferrer" 
+                                   class="cv-opt" 
+                                   style="color:inherit;text-decoration:none;">
+                                    <i class="fa-solid fa-eye"></i> View CV
+                                </a>
+                                <a href="https://drive.google.com/uc?export=download&id=126NnR0cdZ_Kn2o5tewt8NuCmzaXLVLAu" 
+                                   download 
+                                   class="cv-opt" 
+                                   style="color:inherit;text-decoration:none;">
+                                    <i class="fa-solid fa-download"></i> Download CV
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="hero-stat"><div class="hero-stat-num">3+</div><div class="hero-stat-label">Years Exp.</div></div>
+                        <div class="hero-stat"><div class="hero-stat-num">5+</div><div class="hero-stat-label">Projects Done</div></div>
+                        <div class="hero-stat"><div class="hero-stat-num">2+</div><div class="hero-stat-label">Happy Clients</div></div>
+                    </div>
                 </div>
-
-                <div class="pro-card" id="pr3" data-aos="flip-down" data-aos-duration="2000">
-                    <img class="pro-img" src="images/hamid5.png" alt="project image"> 
-                      <div class="pro-link">
-                         <h3>Website</h3>
-                        <p>Website by using <span class="tech">HTML,CSS,JavaScript</span></p>
-                       <div class="links">
-                         <a href="#" target="_blank"><i class="fa-solid fa-eye"></i></a>
-                        <!-- Updated GitHub to Hamid_Awol -->
-                        <a href="#" target="_blank"><i class="fa-brands fa-github"></i></a>
-                       </div>
-                      </div>
+                <div class="col-lg-5 col-md-12 d-flex justify-content-center">
+                    <img src="assets/images/profile-photo.png" 
+                         alt="Hamid Awol - Fullstack Developer" 
+                         class="hero-photo"
+                         style="width:100%;height:100%;object-fit:cover;border-radius:24px;">
                 </div>
-          </div>
-          <div class="container">
-             <div class="pro-card" id="pr5" data-aos="flip-down" data-aos-duration="2000">
-                     <img class="pro-img" src="images/Hamidb1.png" alt="project image"> 
-
-                      <div class="pro-link">
-                         <h3>Website</h3>
-                        <p>Website by using  <br> <span class="tech">HTML,CSS,JavaScript</span></p>
-                       <div class="links">
-                         <a href="#" target="_blank"><i class="fa-solid fa-eye"></i></a>
-                        <!-- Updated GitHub to Hamid_Awol -->
-                        <a href="#" target="_blank"><i class="fa-brands fa-github"></i></a>
-                       </div>
-                      </div>                    
-              </div>
-              <div class="pro-card" id="pr6" data-aos="flip-up" data-aos-duration="40000">
-                  <img class="pro-img" src="images//Hamidb2.png" alt="project image"> 
-                     
-                      <div class="pro-link">
-                         <h3>Sinup and Login Form Website</h3>
-                        <p> Website by using <br> <span class="tech">HTML,CSS,JavaScript </span></p>
-                       <div class="links">
-                         <a href="#" target="_blank"><i class="fa-solid fa-eye"></i></a>
-                        <!-- Updated GitHub to Hamid_Awol -->
-                        <a href="https://github.com/Hamid_Awol  target="_blank"><i class="fa-brands fa-github"></i></a>
-                       </div>
-                      </div>                        
-              </div>
-              <div class="pro-card" id="pr7" data-aos="flip-down" data-aos-duration="2000">
-                <img class="pro-img" src="images/Hamidb3.png" alt="project image"> 
-                     
-                      <div class="pro-link">
-                         <h3>House Price Predictor app</h3>
-                        <p>Website by using <br> <span class="tech">HTML,CSS,JavaScript </span></p>
-                       <div class="links">
-                         <a href="# target="_blank"><i class="fa-solid fa-eye"></i></a>
-                        <!-- Updated GitHub to Hamid_Awol -->
-                        <a href="https://github.com/Hamid_Awol/Qr-code-generator-" target="_blank"><i class="fa-brands fa-github"></i></a>
-                       </div>
-                      </div>               
-              </div>
-          </div>
-
+            </div>
         </div>
- </section>
- <!-- Media section -->
-  <section class="media">
-    <div class="heading">
-                <h1>Follow Me <span class="line"></span></h1>
-    </div>
-     <div class="link media-link" >
-                    <a href="https://t.me/Hamid_Awol" class="icon"><i class="fa-brands fa-telegram" ></i></a>
-                    <a href="https://www.linkedin.com/in/hamid-awol-4185353a7?utm_source=share_via&utm_content=profile&utm_medium=member_android" class="icon"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://www.tiktok.com/@hamid_awol?_t=ZM-90bBtJdfuYK&_r=1" class="icon"><i class="fa-brands fa-tiktok"></i></a>
-                    <!-- Updated GitHub to Hamid_Awol -->
-                    <a href="https://github.com/Hamid_Awol" class="icon"><i class="fa-brands fa-github"></i></a>
+    </section>
+
+    <!-- ============================================================ CV MODAL ============================================================ -->
+    <div id="cvModal">
+        <button class="cv-back-btn" onclick="closeCvModal()">
+            <i class="fa-solid fa-arrow-left"></i> Back to Portfolio
+        </button>
+        <div class="cv-modal-inner">
+            <div class="cv-modal-header">
+                <div class="cv-modal-title"><i class="fa-solid fa-file-lines"></i> Curriculum Vitae — Hamid Awol</div>
+                <button class="cv-close-btn" onclick="closeCvModal()" aria-label="Close CV"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="cv-page">
+                <div class="cv-header">
+                    <div class="cv-avatar"><i class="fa-solid fa-user"></i></div>
+                    <div>
+                        <div class="cv-name">HAMID AWOL</div>
+                        <div class="cv-role">AI-Powered Fullstack Developer</div>
+                        <div class="cv-contacts">
+                            <div class="cv-contact-item"><i class="fa-solid fa-envelope"></i> hamidawol39@gmail.com</div>
+                            <div class="cv-contact-item"><i class="fa-solid fa-phone"></i> +251 912 426 433</div>
+                            <div class="cv-contact-item"><i class="fa-solid fa-location-dot"></i> Central Ethiopia</div>
+                            <div class="cv-contact-item"><i class="fa-brands fa-github"></i> github.com/HamidAwol</div>
+                            <div class="cv-contact-item"><i class="fa-brands fa-linkedin"></i> linkedin.com/in/hamid-awol</div>
+                        </div>
+                    </div>
                 </div>
-
-  </section>
- <!--Contact Section -->
- <section class="contact" id="contact">
-	<div class="con">
-		<div class="heading">
-                <h1>Contact Me <span class="line"></span></h1>
-    </div>
-		<div class="contact-con">
-			<div class="card1" data-aos="fade-up" data-aos-duration="2000">
-				<div class="ico">
-					<i class="fa-solid fa-envelope"></i>
-
-				</div>
-				<h3>Email</h3>
-				<p>hamidawol39@gmail.com</p>
-			</div>
-			<div class="card1" data-aos="fade-down" data-aos-duration="2000">
-				<div class="ico">
-					<i class="fa-solid fa-phone-flip"></i>
-				</div>
-				
-				<h3>My Phone</h3>
-				<p>+251912426433</p>
-			</div>
-			<div class="card1" data-aos="fade-up" data-aos-duration="2000">
-				<div class="ico">
-					<i class="fa-solid fa-location-dot"></i>
-				</div>
-				
-				<h3>My Adress</h3>
-				<p>Centeral Ethiopia ,Mareko Special Woreda</p>
-			</div>
-		</div>
-
-
-		<div class="container contact-info1" id="cont">
-			<form data-aos="fade-up" data-aos-duration="2000" >
-				<div>
-					<input type="text" placeholder="Name" id="name1">
-				</div>
-				<div>
-					<input type="email" placeholder="Email" id="email">
-				</div>
-				<div>
-					<input type="text" placeholder="Number" id="number">
-				</div>
-				<div>
-					<textarea name="" id="" placeholder="Meassge" ></textarea>
-				</div>
-
-				<div>
-          <a href="#cont" class="btn send-btn" onclick="check()">Send Message</a>
-			  </div>
-
-			</form>
-
-			<div class="map" data-aos="fade-left" data-aos-duration="2000">
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31606.744313871164!2d38.5121134613701!3d8.015117135588028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x17b361476700d30f%3A0x92aae66751bccf68!2sKoshe!5e0!3m2!1sen!2set!4v1773482075942!5m2!1sen!2set" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-			</div>
-
-		</div>
-	</div>
- </section>
- <!-- Footer Section -->
-  <footer>
-	<div class="con">
-	<div class="container">
-<div class="cont1">
-  	<div class="foot-desc">
-		 <h3>Hamid<div class="line line2"></div></h3>
-		<p>I'm a passionate Full-Stack Developer. I loves creating modern, responsive, and user-friendly websites using clean code and creative design.</p>
-
-	</div>
-
-	<div class="quick">
-		    
-        <h3>Quick link <div class="line line2"></div></h3>
-		
-             <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#skill">Skills</a>
-            <a href="#service">Services</a>
-            <a href="#project">Projects</a>
-            <a href="#contact">Contact</a>
-           
-	</div>
-</div>
-
-<div class="cont1" >
-  	<div class="fopt-pro">
-		  <h3>Project <div class="line line2"></div></h3>
-		    <a href="#">SMS</a>
-            <a href="#">Koshe School</a>
-            <a href="#">Portfolio</a>
-            <a href="#">Central Ethiopia</a>
-	</div>
-
-  <div class="foot-skill">
-		  <h3>Skill <div class="line2"></div></h3>
-		    <p>HTML 5</p>
-        <p>CSS</p>
-        <p>Bootsrap 5</p>
-        <p>JavaScript</p>
-        <p>React Js</p>
-        <p>Php</p>
-	</div>
-</div>
-
-	</div>
-	<hr>
-	<div class="hr">
-    <p>&copy; 2026 Hamid . All rights reserved</p>
-  <div class="link">
-                    <a href="https://t.me/Hamid_Awol" class="icon"><i class="fa-brands fa-telegram"></i></a>
-                    <a href="https://www.linkedin.com/in/hamid-awol-4185353a7?utm_source=share_via&utm_content=profile&utm_medium=member_android" class="icon"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://www.tiktok.com/@hamid_awol?_t=ZM-90bBtJdfuYK&_r=1" class="icon"><i class="fa-brands fa-tiktok"></i></a>
-                    <!-- Updated GitHub to Hamid_Awol -->
-                    <a href="https://github.com/Hamid_Awol" class="icon"><i class="fa-brands fa-github"></i></a>
+                <div class="cv-body">
+                    <div>
+                        <div class="cv-section">
+                            <div class="cv-section-title">Technical Skills</div>
+                            <div class="cv-skill-row"><span class="cv-skill-name">HTML5 / CSS3</span><div class="cv-skill-bar"><div class="cv-skill-fill" style="width:98%"></div></div><span style="font-size:11px;color:var(--primary);">98%</span></div>
+                            <div class="cv-skill-row"><span class="cv-skill-name">React.js</span><div class="cv-skill-bar"><div class="cv-skill-fill" style="width:90%"></div></div><span style="font-size:11px;color:var(--primary);">90%</span></div>
+                            <div class="cv-skill-row"><span class="cv-skill-name">JavaScript</span><div class="cv-skill-bar"><div class="cv-skill-fill" style="width:70%"></div></div><span style="font-size:11px;color:var(--primary);">70%</span></div>
+                            <div class="cv-skill-row"><span class="cv-skill-name">Python</span><div class="cv-skill-bar"><div class="cv-skill-fill" style="width:90%"></div></div><span style="font-size:11px;color:var(--primary);">90%</span></div>
+                            <div class="cv-skill-row"><span class="cv-skill-name">PHP</span><div class="cv-skill-bar"><div class="cv-skill-fill" style="width:77%"></div></div><span style="font-size:11px;color:var(--primary);">77%</span></div>
+                            <div class="cv-skill-row"><span class="cv-skill-name">Node.js</span><div class="cv-skill-bar"><div class="cv-skill-fill" style="width:50%"></div></div><span style="font-size:11px;color:var(--primary);">50%</span></div>
+                            <div class="cv-skill-row"><span class="cv-skill-name">MySQL</span><div class="cv-skill-bar"><div class="cv-skill-fill" style="width:80%"></div></div><span style="font-size:11px;color:var(--primary);">80%</span></div>
+                        </div>
+                        <div class="cv-section">
+                            <div class="cv-section-title">Education</div>
+                            <div class="cv-exp-item">
+                                <div class="cv-exp-title">B.Sc. Computer Science</div>
+                                <div class="cv-exp-sub">Arsi University — 2021–Present</div>
+                                <div class="cv-exp-desc">Studying core CS principles, data structures, algorithms, and software engineering.</div>
+                            </div>
+                        </div>
+                        <div class="cv-section">
+                            <div class="cv-section-title">Languages</div>
+                            <div class="cv-skill-row"><span class="cv-skill-name">English</span><div class="cv-skill-bar"><div class="cv-skill-fill" style="width:85%"></div></div><span style="font-size:11px;color:var(--primary);">Fluent</span></div>
+                            <div class="cv-skill-row"><span class="cv-skill-name">Amharic</span><div class="cv-skill-bar"><div class="cv-skill-fill" style="width:100%"></div></div><span style="font-size:11px;color:var(--primary);">Native</span></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="cv-section">
+                            <div class="cv-section-title">Professional Summary</div>
+                            <p class="cv-summary">Results-driven Computer Science student and passionate Fullstack Developer with 3+ years of hands-on experience building modern, responsive web applications. Proficient in React, Node.js, Python, and PHP. Skilled at integrating AI/ML models into web products and delivering clean, user-focused experiences.</p>
+                        </div>
+                        <div class="cv-section">
+                            <div class="cv-section-title">Experience</div>
+                            <div class="cv-exp-item">
+                                <div class="cv-exp-title">Freelance Web Developer</div>
+                                <div class="cv-exp-sub">Self-employed — 2022–Present</div>
+                                <div class="cv-exp-desc">Delivered custom websites and web apps for local clients. Projects include school portals, government websites, management systems, and AI-powered applications.</div>
+                            </div>
+                            <div class="cv-exp-item">
+                                <div class="cv-exp-title">Content Creator — Tech Education</div>
+                                <div class="cv-exp-sub">TikTok / Telegram — 2023–Present</div>
+                                <div class="cv-exp-desc">Teaching coding basics, web development, and programming concepts to Amharic-speaking audiences online.</div>
+                            </div>
+                        </div>
+                        
+                            <div class="cv-section-title">Key Projects</div>
+                            <div class="cv-exp-item">
+                                <div class="cv-exp-title">Student Management System</div>
+                                <div class="cv-exp-desc">Full admin dashboard for tracking students, grades, and records.</div>
+                                <div style="margin-top:6px;"><span class="cv-tag">HTML</span><span class="cv-tag">CSS</span><span class="cv-tag">JavaScript</span></div>
+                            </div>
+                            <div class="cv-exp-item">
+                                <div class="cv-exp-title">House Price Predictor (AI)</div>
+                                <div class="cv-exp-desc">ML-powered web app predicting property prices from user inputs.</div>
+                                <div style="margin-top:6px;"><span class="cv-tag">Python</span><span class="cv-tag">ML</span><span class="cv-tag">Flask</span></div>
+                            </div>
+                            <div class="cv-exp-item">
+                                <div class="cv-exp-title">Central Ethiopia Gov Portal</div>
+                                <div class="cv-exp-desc">Multi-page government-style responsive portal with full accessibility.</div>
+                                <div style="margin-top:6px;"><span class="cv-tag">HTML</span><span class="cv-tag">CSS</span><span class="cv-tag">JS</span></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-  </div>
-	</div>
-  </footer>
+            </div>
+            <div style="text-align:center;padding:20px 0 28px;">
+                <button class="cv-back-btn" onclick="closeCvModal()">
+                    <i class="fa-solid fa-arrow-left"></i> Back to Portfolio
+                </button>
+            </div>
+        </div>
+    </div>
 
-  <script>
-    let menu=document.getElementById("menu");
-    let nav=document.getElementById("nav");
-    let times=document.getElementById("times");
-    // to open nav
-  menu.addEventListener("click",function(){
-    nav.style.right="0";
-  })
-// to cose nav
-  times.addEventListener("click",function(){
-    nav.style.right="-100%";
-  })
-  function check() {
-      // Get input values
-      let name = document.getElementById("name1").value;
-      let email = document.getElementById("email").value;
-      let number = document.getElementById("number").value;
-      
+    <!-- ============================================================ ABOUT ============================================================ -->
+    <section id="about" class="section-padding section-alt">
+        <div class="container">
+            <div class="row align-items-center gy-5">
+                <div class="col-lg-5 d-flex justify-content-center fade-in">
+                    <div class="about-img-box">
+                        <img src="assets/images/profile-photo.png" 
+                             alt="Hamid Awol - Professional Photo" 
+                             class="about-img"
+                             style="width:100%;max-width:380px;aspect-ratio:1/1;border-radius:20px;object-fit:cover;border:2px solid var(--border);">
+                    </div>
+                </div>
+                <div class="col-lg-7 fade-in stagger-1">
+                    <span class="section-label">Who I Am</span>
+                    <h2 class="section-title">Full-Stack <span>Developer</span></h2>
+                    <div class="title-divider left"></div>
+                    <p style="color:var(--text-muted);line-height:1.85;margin-bottom:16px;">I'm Hamid Awol, a passionate Full-Stack Developer and Computer Science student at Arsi University, Ethiopia. I specialize in building modern, responsive, and intelligent web experiences powered by AI.</p>
+                    <p style="color:var(--text-muted);line-height:1.85;margin-bottom:28px;">My journey started 3 years ago with a simple HTML file. Today I craft full-stack applications with React, Node.js, Python, and beyond. Driven by clean code, creative design, and solving real-world problems.</p>
+                    <div class="row g-3 mb-4">
+                        <div class="col-6"><span class="info-label">Email</span><div class="info-value" style="word-break:break-all;">hamidawol39@gmail.com</div></div>
+                        <div class="col-6"><span class="info-label">Phone</span><div class="info-value">+251 912 426 433</div></div>
+                        <div class="col-6"><span class="info-label">Language</span><div class="info-value">English, Amharic</div></div>
+                        <div class="col-6"><span class="info-label">Freelance</span><div class="info-value" style="color:var(--primary);font-weight:600;">Available ✓</div></div>
+                    </div>
+                    <div class="row g-3 mb-4">
+                        <div class="col-4"><div class="stat-box"><div class="stat-number" data-count="5">0</div><div class="stat-label">Projects</div></div></div>
+                        <div class="col-4"><div class="stat-box"><div class="stat-number" data-count="12">0</div><div class="stat-label">Technologies</div></div></div>
+                        <div class="col-4"><div class="stat-box"><div class="stat-number" data-count="2000">0</div><div class="stat-label">Hours of Code</div></div></div>
+                    </div>
+                    <div class="d-flex flex-wrap gap-3 align-items-center">
+                        <a href="https://t.me/Hamid_Awol" target="_blank" rel="noopener" class="social-circle sc-telegram" title="Telegram"><i class="fa-brands fa-telegram"></i></a>
+                        <a href="https://www.linkedin.com/in/hamid-awol-4185353a7" target="_blank" rel="noopener" class="social-circle sc-linkedin" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://github.com/HamidAwol" target="_blank" rel="noopener" class="social-circle sc-github" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.tiktok.com/@hamid_awol" target="_blank" rel="noopener" class="social-circle sc-tiktok" title="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="mailto:hamidawol39@gmail.com" class="social-circle sc-email" title="Email"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-      // Regular expressions
-      let nameRegex = /^[A-Za-z\s]+$/;
-      let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-      let numberRegex = /^[0-9]+$/;
-  
-      // Validation checks
-      if (name === "") {
-         alert("Name field is required!");
-      } else if (!nameRegex.test(name)) {
-         alert("Name must contain only letters!");
-      } else if (email === "") {
-        alert("Email field is required!");
-      } else if (!emailRegex.test(email)) {
-        alert("Please enter a valid email address!");
-      } else if (number === "") {
-        alert("Number field is required!");
-      } else if (!numberRegex.test(number)) {
-        alert("Number must contain digits only!");
-      } else {
-        alert("✅ All fields are valid!");
-      }
-    }
-  error.innerHTML=erro;
+    <!-- ============================================================ SKILLS ============================================================ -->
+    <section id="skills" class="section-padding">
+        <div class="container">
+            <div class="text-center mb-5 fade-in">
+                <span class="section-label">Expertise</span>
+                <h2 class="section-title">Technical <span>Skills</span></h2>
+                <div class="title-divider mx-auto"></div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6 fade-in stagger-1"><div class="skill-card"><div class="skill-icon-wrap ic-html"><i class="fa-brands fa-html5"></i></div><h6>HTML 5</h6><div class="d-flex justify-content-between mb-1"><span class="skill-pct">98%</span></div><div class="skill-bar"><div class="skill-fill" style="background:#e44d26" data-width="98"></div></div></div></div>
+                <div class="col-lg-3 col-md-6 fade-in stagger-2"><div class="skill-card"><div class="skill-icon-wrap ic-css"><i class="fa-brands fa-css3-alt"></i></div><h6>CSS 3</h6><div class="d-flex justify-content-between mb-1"><span class="skill-pct">90%</span></div><div class="skill-bar"><div class="skill-fill" style="background:#1572b6" data-width="90"></div></div></div></div>
+                <div class="col-lg-3 col-md-6 fade-in stagger-3"><div class="skill-card"><div class="skill-icon-wrap ic-js"><i class="fa-brands fa-js"></i></div><h6>JavaScript</h6><div class="d-flex justify-content-between mb-1"><span class="skill-pct">70%</span></div><div class="skill-bar"><div class="skill-fill" style="background:#f0db4f" data-width="70"></div></div></div></div>
+                <div class="col-lg-3 col-md-6 fade-in stagger-4"><div class="skill-card"><div class="skill-icon-wrap ic-react"><i class="fa-brands fa-react"></i></div><h6>React.js</h6><div class="d-flex justify-content-between mb-1"><span class="skill-pct">90%</span></div><div class="skill-bar"><div class="skill-fill" style="background:#61dafb" data-width="90"></div></div></div></div>
+                <div class="col-lg-3 col-md-6 fade-in"><div class="skill-card"><div class="skill-icon-wrap ic-bootstrap"><i class="fa-brands fa-bootstrap"></i></div><h6>Bootstrap 5</h6><div class="d-flex justify-content-between mb-1"><span class="skill-pct">90%</span></div><div class="skill-bar"><div class="skill-fill" style="background:#7952b3" data-width="90"></div></div></div></div>
+                <div class="col-lg-3 col-md-6 fade-in stagger-1"><div class="skill-card"><div class="skill-icon-wrap ic-node"><i class="fa-brands fa-node-js"></i></div><h6>Node.js</h6><div class="d-flex justify-content-between mb-1"><span class="skill-pct">50%</span></div><div class="skill-bar"><div class="skill-fill" style="background:#68a063" data-width="50"></div></div></div></div>
+                <div class="col-lg-3 col-md-6 fade-in stagger-2"><div class="skill-card"><div class="skill-icon-wrap ic-php"><i class="fa-brands fa-php"></i></div><h6>PHP</h6><div class="d-flex justify-content-between mb-1"><span class="skill-pct">77%</span></div><div class="skill-bar"><div class="skill-fill" style="background:#777bb4" data-width="77"></div></div></div></div>
+                <div class="col-lg-3 col-md-6 fade-in stagger-3"><div class="skill-card"><div class="skill-icon-wrap ic-python"><i class="fa-brands fa-python"></i></div><h6>Python</h6><div class="d-flex justify-content-between mb-1"><span class="skill-pct">90%</span></div><div class="skill-bar"><div class="skill-fill" style="background:#3776ab" data-width="90"></div></div></div></div>
+                <div class="col-lg-3 col-md-6 fade-in"><div class="skill-card"><div class="skill-icon-wrap ic-mysql"><i class="fa-solid fa-database"></i></div><h6>MySQL</h6><div class="d-flex justify-content-between mb-1"><span class="skill-pct">80%</span></div><div class="skill-bar"><div class="skill-fill" style="background:#00758f" data-width="80"></div></div></div></div>
+                <div class="col-lg-3 col-md-6 fade-in stagger-1"><div class="skill-card"><div class="skill-icon-wrap ic-git"><i class="fa-brands fa-git-alt"></i></div><h6>Git</h6><div class="d-flex justify-content-between mb-1"><span class="skill-pct">65%</span></div><div class="skill-bar"><div class="skill-fill" style="background:#f05033" data-width="65"></div></div></div></div>
+                <div class="col-lg-3 col-md-6 fade-in stagger-2"><div class="skill-card"><div class="skill-icon-wrap ic-github"><i class="fa-brands fa-github"></i></div><h6>GitHub</h6><div class="d-flex justify-content-between mb-1"><span class="skill-pct">60%</span></div><div class="skill-bar"><div class="skill-fill" style="background:#24292f" data-width="60"></div></div></div></div>
+                <div class="col-lg-3 col-md-6 fade-in stagger-3"><div class="skill-card"><div class="skill-icon-wrap ic-ux"><i class="fa-solid fa-pen-ruler"></i></div><h6>UI/UX Design</h6><div class="d-flex justify-content-between mb-1"><span class="skill-pct">75%</span></div><div class="skill-bar"><div class="skill-fill" style="background:#ff5a60" data-width="75"></div></div></div></div>
+            </div>
+        </div>
+    </section>
 
-	    // Smooth scrolling for navigation links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-anchor.addEventListener('click', function (e) {
-e.preventDefault();
-                
-const targetId = this.getAttribute('href');
-if(targetId === '#') return;
-                
-const targetElement = document.querySelector(targetId);
-if(targetElement) {
-window.scrollTo({
+    <!-- ============================================================ PROJECTS ============================================================ -->
+    <section id="projects" class="section-padding section-alt">
+        <div class="container">
+            <div class="text-center mb-5 fade-in">
+                <span class="section-label">Portfolio</span>
+                <h2 class="section-title">My <span>Projects</span></h2>
+                <div class="title-divider mx-auto"></div>
+                <p style="color:var(--text-muted);max-width:500px;margin:0 auto;font-size:15px;">Real-world projects showcasing full-stack development across different domains.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-6 col-md-6 fade-in stagger-1">
+                    <div class="project-card h-100">
+                        <div class="project-img-wrap">
+                            <img src="assets/images/student-management.png" 
+                                 alt="Student Management System Dashboard" 
+                                 loading="lazy">
+                        </div>
+                        <div class="project-body">
+                            <h5 class="project-title">Student Management System</h5>
+                            <div class="mb-2"><span class="tech-badge">HTML</span><span class="tech-badge">CSS</span><span class="tech-badge">JavaScript</span></div>
+                            <p class="project-desc">Full-featured system to track students, grades, and records with a clean admin dashboard and data export.</p>
+                            <div class="d-flex align-items-center gap-3 mt-3">
+                                <a href="https://hamidawol.github.io/student-management" target="_blank" rel="noopener" class="proj-btn-circle btn-live" title="Live Demo"><i class="fa-solid fa-eye"></i></a>
+                                <a href="https://github.com/HamidAwol/student-management" target="_blank" rel="noopener" class="proj-btn-circle btn-gh" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                                <span style="font-size:12px;color:var(--text-muted);">Demo &amp; Source Code</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 fade-in stagger-2">
+                    <div class="project-card h-100">
+                        <div class="project-img-wrap">
+                            <img src="assets/images/koshe-school.png" 
+                                 alt="Koshe School Website Homepage" 
+                                 loading="lazy">
+                        </div>
+                        <div class="project-body">
+                            <h5 class="project-title">Koshe School Website</h5>
+                            <div class="mb-2"><span class="tech-badge">HTML</span><span class="tech-badge">CSS</span><span class="tech-badge">JavaScript</span></div>
+                            <p class="project-desc">Modern responsive school website with course listings, faculty profiles, news, and contact form.</p>
+                            <div class="d-flex align-items-center gap-3 mt-3">
+                                <a href="https://hamidawol.github.io/koshe-school" target="_blank" rel="noopener" class="proj-btn-circle btn-live" title="Live Demo"><i class="fa-solid fa-eye"></i></a>
+                                <a href="https://github.com/HamidAwol/koshe-school" target="_blank" rel="noopener" class="proj-btn-circle btn-gh" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                                <span style="font-size:12px;color:var(--text-muted);">Demo &amp; Source Code</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 fade-in stagger-1">
+                    <div class="project-card h-100">
+                        <div class="project-img-wrap">
+                            <img src="assets/images/central-ethiopia.png" 
+                                 alt="Central Ethiopia Government Portal" 
+                                 loading="lazy">
+                        </div>
+                        <div class="project-body">
+                            <h5 class="project-title">Central Ethiopia Gov Portal</h5>
+                            <div class="mb-2"><span class="tech-badge">HTML</span><span class="tech-badge">CSS</span><span class="tech-badge">JS</span></div>
+                            <p class="project-desc">Government-style regional portal with multi-page layout, services section, and responsive mobile design.</p>
+                            <div class="d-flex align-items-center gap-3 mt-3">
+                                <a href="https://hamidawol.github.io/central-ethiopia" target="_blank" rel="noopener" class="proj-btn-circle btn-live" title="Live Demo"><i class="fa-solid fa-eye"></i></a>
+                                <a href="https://github.com/HamidAwol/central-ethiopia" target="_blank" rel="noopener" class="proj-btn-circle btn-gh" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                                <span style="font-size:12px;color:var(--text-muted);">Demo &amp; Source Code</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 fade-in stagger-2">
+                    <div class="project-card h-100">
+                        <div class="project-img-wrap">
+                            <img src="assets/images/auth-system.png" 
+                                 alt="Authentication System Login Page" 
+                                 loading="lazy">
+                        </div>
+                        <div class="project-body">
+                            <h5 class="project-title">Auth System — Signup &amp; Login</h5>
+                            <div class="mb-2"><span class="tech-badge">HTML</span><span class="tech-badge">CSS</span><span class="tech-badge">JavaScript</span></div>
+                            <p class="project-desc">Polished authentication UI with real-time form validation, animations, and mobile-first responsive layout.</p>
+                            <div class="d-flex align-items-center gap-3 mt-3">
+                                <a href="https://hamidawol.github.io/auth-system" target="_blank" rel="noopener" class="proj-btn-circle btn-live" title="Live Demo"><i class="fa-solid fa-eye"></i></a>
+                                <a href="https://github.com/HamidAwol/auth-system" target="_blank" rel="noopener" class="proj-btn-circle btn-gh" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                                <span style="font-size:12px;color:var(--text-muted);">Demo &amp; Source Code</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 fade-in stagger-1">
+                    <div class="project-card h-100">
+                        <div class="project-img-wrap">
+                            <img src="assets/images/house-predictor.png" 
+                                 alt="House Price Predictor AI Application" 
+                                 loading="lazy">
+                        </div>
+                        <div class="project-body">
+                            <h5 class="project-title">House Price Predictor (AI)</h5>
+                            <div class="mb-2"><span class="tech-badge">Python</span><span class="tech-badge">ML</span><span class="tech-badge">HTML/CSS</span></div>
+                            <p class="project-desc">AI-powered web app using machine learning to predict house prices based on location, size, and features.</p>
+                            <div class="d-flex align-items-center gap-3 mt-3">
+                                <a href="https://hamidawol.github.io/house-predictor" target="_blank" rel="noopener" class="proj-btn-circle btn-live" title="Live Demo"><i class="fa-solid fa-eye"></i></a>
+                                <a href="https://github.com/HamidAwol/Qr-code-generator-" target="_blank" rel="noopener" class="proj-btn-circle btn-gh" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                                <span style="font-size:12px;color:var(--text-muted);">Demo &amp; Source Code</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 fade-in stagger-2">
+                    <div class="project-card h-100">
+                        <div class="project-img-wrap">
+                            <img src="assets/images/portfolio.png" 
+                                 alt="Developer Portfolio Website" 
+                                 loading="lazy">
+                        </div>
+                        <div class="project-body">
+                            <h5 class="project-title">Developer Portfolio</h5>
+                            <div class="mb-2"><span class="tech-badge">Bootstrap 5</span><span class="tech-badge">HTML</span><span class="tech-badge">CSS</span><span class="tech-badge">JS</span></div>
+                            <p class="project-desc">This portfolio — built with Bootstrap 5, dark mode, typing animation, scroll effects, and a contact form.</p>
+                            <div class="d-flex align-items-center gap-3 mt-3">
+                                <a href="https://hamidawol.github.io" target="_blank" rel="noopener" class="proj-btn-circle btn-live" title="Live Demo"><i class="fa-solid fa-eye"></i></a>
+                                <a href="https://github.com/HamidAwol/portfolio" target="_blank" rel="noopener" class="proj-btn-circle btn-gh" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                                <span style="font-size:12px;color:var(--text-muted);">Demo &amp; Source Code</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-behavior: 'smooth'});
-                }
-            });
-        });
- 
-</script>
+    <!-- ============================================================ CONTACT ============================================================ -->
+    <section id="contact" class="section-padding">
+        <div class="container">
+            <div class="text-center mb-5 fade-in">
+                <span class="section-label">Get In Touch</span>
+                <h2 class="section-title">Contact <span>Me</span></h2>
+                <div class="title-divider mx-auto"></div>
+            </div>
+            <div class="row g-5">
+                <div class="col-lg-7 fade-in">
+                    <form id="contactForm" novalidate>
+                        <div class="row g-3">
+                            <div class="col-md-6"><label class="form-label fw-semibold" style="font-size:14px;">Full Name</label><input type="text" class="form-control" id="cname" placeholder="Hamid Awol" required></div>
+                            <div class="col-md-6"><label class="form-label fw-semibold" style="font-size:14px;">Email Address</label><input type="email" class="form-control" id="cemail" placeholder="you@example.com" required></div>
+                            <div class="col-12"><label class="form-label fw-semibold" style="font-size:14px;">Subject</label><input type="text" class="form-control" id="csubject" placeholder="Project enquiry"></div>
+                            <div class="col-12"><label class="form-label fw-semibold" style="font-size:14px;">Message</label><textarea class="form-control" id="cmsg" rows="5" placeholder="Tell me about your project..." required></textarea></div>
+                            <div class="col-12"><button type="submit" class="submit-btn d-flex align-items-center gap-2" id="submitBtn"><i class="fa-solid fa-paper-plane"></i> Send Message</button></div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-5 fade-in stagger-2">
+                    <h5 class="fw-bold mb-2" style="font-size:20px;">Let's work together</h5>
+                    <p style="color:var(--text-muted);font-size:14px;margin-bottom:28px;line-height:1.7;">Have a project in mind or just want to say hi? I'm always open to discussing new opportunities.</p>
+                    <div class="d-flex flex-column gap-3 mb-4">
+                        <div class="contact-info-card d-flex align-items-center gap-3">
+                            <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                            <div><div style="font-size:12px;color:var(--text-muted);">Email</div><a href="mailto:hamidawol39@gmail.com" style="color:var(--text);font-weight:500;font-size:14px;">hamidawol39@gmail.com</a></div>
+                        </div>
+                        <div class="contact-info-card d-flex align-items-center gap-3">
+                            <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+                            <div><div style="font-size:12px;color:var(--text-muted);">Phone</div><span style="font-weight:500;font-size:14px;">+251 912 426 433</span></div>
+                        </div>
+                        <div class="contact-info-card d-flex align-items-center gap-3">
+                            <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                            <div><div style="font-size:12px;color:var(--text-muted);">Location</div><span style="font-weight:500;font-size:14px;">Central Ethiopia 🇪🇹</span></div>
+                        </div>
+                        <div class="contact-info-card d-flex align-items-center gap-3">
+                            <div class="contact-icon" style="background:rgba(0,136,204,.1);color:#0088cc;"><i class="fa-brands fa-telegram"></i></div>
+                            <div><div style="font-size:12px;color:var(--text-muted);">Telegram</div><a href="https://t.me/Hamid_Awol" target="_blank" style="color:var(--primary);font-weight:500;font-size:14px;">@Hamid_Awol</a></div>
+                        </div>
+                    </div>
+                    <div class="d-flex gap-3">
+                        <a href="https://t.me/Hamid_Awol" target="_blank" rel="noopener" class="social-circle sc-telegram" title="Telegram"><i class="fa-brands fa-telegram"></i></a>
+                        <a href="https://www.linkedin.com/in/hamid-awol-4185353a7" target="_blank" rel="noopener" class="social-circle sc-linkedin" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://github.com/HamidAwol" target="_blank" rel="noopener" class="social-circle sc-github" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.tiktok.com/@hamid_awol" target="_blank" rel="noopener" class="social-circle sc-tiktok" title="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
+    <!-- ============================================================ FOOTER ============================================================ -->
+    <footer class="py-5">
+        <div class="container">
+            <div class="row g-4 mb-4">
+                <div class="col-md-4">
+                    <div class="footer-brand mb-3">Hamid<span>.</span></div>
+                    <p style="color:#8b949e;font-size:14px;line-height:1.7;max-width:260px;">Passionate Full-Stack Developer crafting modern, responsive, and AI-powered web experiences.</p>
+                    <div class="d-flex gap-3 mt-3">
+                        <a href="https://t.me/Hamid_Awol" target="_blank" rel="noopener" class="footer-sc fsc-telegram" title="Telegram"><i class="fa-brands fa-telegram"></i></a>
+                        <a href="https://www.linkedin.com/in/hamid-awol-4185353a7" target="_blank" rel="noopener" class="footer-sc fsc-linkedin" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://github.com/HamidAwol" target="_blank" rel="noopener" class="footer-sc fsc-github" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.tiktok.com/@hamid_awol" target="_blank" rel="noopener" class="footer-sc fsc-tiktok" title="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h6 class="text-white fw-bold mb-3">Quick Links</h6>
+                    <a href="#home" class="footer-link">Home</a>
+                    <a href="#about" class="footer-link">About</a>
+                    <a href="#skills" class="footer-link">Skills</a>
+                    <a href="#projects" class="footer-link">Projects</a>
+                    <a href="#contact" class="footer-link">Contact</a>
+                </div>
+                <div class="col-md-4">
+                    <h6 class="text-white fw-bold mb-3">Projects</h6>
+                    <a href="#projects" class="footer-link">Student Management</a>
+                    <a href="#projects" class="footer-link">Koshe School</a>
+                    <a href="#projects" class="footer-link">Central Ethiopia Portal</a>
+                    <a href="#projects" class="footer-link">House Price Predictor</a>
+                </div>
+            </div>
+            <hr style="border-color:#21262d;">
+            <div class="d-flex flex-wrap justify-content-between align-items-center gap-3 pt-2">
+                <p style="color:#8b949e;font-size:13px;margin:0;">&copy; <span id="footerYear"></span> Hamid Awol. All rights reserved.</p>
+                <p style="color:#8b949e;font-size:13px;margin:0;">Built with ❤️ by Hamid Digital Solution</p>
+            </div>
+        </div>
+    </footer>
 
-</script>
+    <!-- BACK TO TOP -->
+    <button id="backToTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+    
+    <!-- TOAST MESSAGE -->
+    <div class="toast-msg" id="toastMsg"></div>
 
-<script>
-  AOS.init();
-</script>
+    <!-- External JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
 </body>
-
 </html>
